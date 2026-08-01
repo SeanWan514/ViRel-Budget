@@ -1,0 +1,54 @@
+{
+  "run_name": "verification_smolvlm500m_dense_paper1200",
+  "seed": 13,
+  "backend": {
+    "name": "smolvlm",
+    "model_id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "device": "cuda",
+    "max_new_tokens": 24,
+    "torch_dtype": "float16",
+    "trust_remote_code": true
+  },
+  "dataset": {
+    "name": "paper_1200_balanced",
+    "path": "data/paper_1200/samples.jsonl",
+    "limit": null,
+    "split_field": "split",
+    "validation_split": "validation",
+    "test_split": "test"
+  },
+  "interventions": [
+    {"name": "gray", "type": "gray"},
+    {"name": "blur", "type": "blur", "radius": 8.0},
+    {"name": "irrelevant", "type": "irrelevant", "pool": "data/paper_1200/irrelevant"},
+    {
+      "name": "counterfactual",
+      "type": "counterfactual",
+      "applies_to": ["visual_counterfact_color", "visual_counterfact_size"]
+    }
+  ],
+  "pruning": {
+    "methods": [],
+    "budget_schedule": [],
+    "dense_budget": "full"
+  },
+  "policy": {
+    "tau_grid": [0.25, 0.5, 0.75, 1.0],
+    "rho_grid": [0.5, 0.7, 0.9],
+    "dense_vem_min": 0.10,
+    "prefer_rr": true
+  },
+  "analysis": {
+    "bootstrap_iterations": 1000
+  },
+  "cost": {
+    "base_ms": 0.0,
+    "per_token_ms": 1.0,
+    "dense_token_count": null,
+    "dollar_per_1k_ms": 0.00002,
+    "energy_joule_per_ms": 0.004
+  },
+  "outputs": {
+    "dir": "results/verification_smolvlm500m_dense_paper1200"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label_rows": 4800,
+  "method": "random",
+  "sample_count": 1200,
+  "source_config": "configs/phase_a_current_llava15_7b_random.json",
+  "source_records": "results/phase_a_current_llava15_7b_random/records_with_measured_energy.jsonl",
+  "strict_target": "original-answer fidelity AND dense intervention-answer trajectory fidelity"
+}

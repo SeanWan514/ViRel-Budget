@@ -1,0 +1,23 @@
+{
+  "artifact_type": "virel_smolvlm500m_dense_pareto_audit",
+  "claim_boundary": "Valid as a dense SLM resource/performance point. It is not a ViRel controller, pruning-method comparison, or prospective 900-case result.",
+  "codecarbon_country": "Iceland",
+  "codecarbon_emissions_kgco2e_pue1": 0.0035363713125699595,
+  "codecarbon_energy_kwh": 0.12675651403901878,
+  "codecarbon_version": "3.2.9",
+  "complete_inference_records": true,
+  "mean_original_call_gpu_energy_joule": 66.27268595534079,
+  "mean_original_call_latency_ms": 429.471884634695,
+  "mean_visual_tokens": 1009.6591666666667,
+  "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "parameter_count": 500000000,
+  "peak_gpu_memory_mb": 2918.0,
+  "post_inference_command_status": 1,
+  "post_inference_failure": "The dense inference grid completed; legacy report generation then indexed an empty pruning budget schedule. Reanalysis artifacts were generated from the complete records.",
+  "records": 4000,
+  "scope": "Dense-only secondary model-size/Pareto verification on the common 1,200 development cases.",
+  "unconditional_accuracy": 0.6583333333333333,
+  "unique_samples": 1200,
+  "wrapper_duration_s": 1917.5856080055237,
+  "wrapper_gpu_energy_kwh": 0.06598288328582089
+}

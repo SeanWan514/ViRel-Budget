@@ -1,0 +1,28 @@
+{
+  "annotator_order_seeds": {
+    "A": 4802,
+    "B": 4803
+  },
+  "blinded_fields": [
+    "sample_id",
+    "model",
+    "method",
+    "selected_budget",
+    "controller_outcome",
+    "audit_category"
+  ],
+  "forms": {
+    "A": "c9167964e58ecd49f80a7d39886e49055961f4a162f1dd037adf0c12df66c721",
+    "B": "c12cd0351625542b2a947a7b17fe36f48bcbca6abc72dba666e7eb7bcf92fb9a",
+    "private_mapping": "47c61e97b551acfb84a2357a009626f014a7692df21c37e6b85bc9a4aed2c0e8"
+  },
+  "required_analysis": [
+    "raw agreement",
+    "Cohen kappa",
+    "eligibility rate",
+    "artifact rate",
+    "resolved adjudication"
+  ],
+  "sample_count": 48,
+  "selection_seed": 4801
+}

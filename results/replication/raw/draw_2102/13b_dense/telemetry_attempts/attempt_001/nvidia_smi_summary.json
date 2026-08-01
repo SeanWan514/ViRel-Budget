@@ -1,0 +1,15 @@
+{
+  "command_exit_status": 0,
+  "duration_s": 166.35126161575317,
+  "max_gpu_utilization_pct": 97.0,
+  "max_memory_used_mb": 28357.0,
+  "max_power_w": 453.8,
+  "mean_gpu_utilization_pct": 17.462093862815884,
+  "mean_memory_used_mb": 12371.590854392298,
+  "mean_power_w": 138.91998796630565,
+  "measured_energy_joule": 23109.515261840195,
+  "median_power_w": 82.75,
+  "memory_total_mb": 97887.0,
+  "monitor": "nvidia-smi 200ms polling",
+  "sample_count": 831
+}

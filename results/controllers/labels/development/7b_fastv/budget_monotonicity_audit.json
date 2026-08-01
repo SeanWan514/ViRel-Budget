@@ -1,0 +1,49 @@
+{
+  "fastv": {
+    "monotonic_count": 1177,
+    "monotonic_rate": 0.9808333333333333,
+    "n": 1200,
+    "nonmonotonic_count": 23,
+    "nonmonotonic_sample_ids": [
+      "mmstar_000287",
+      "mmstar_000396",
+      "mmstar_000422",
+      "mmstar_000656",
+      "mmstar_000826",
+      "mmstar_000989",
+      "mmstar_001051",
+      "mmstar_001074",
+      "mmstar_001167",
+      "mmstar_001231",
+      "mmstar_001233",
+      "mmstar_001364",
+      "pope_adversarial_000085",
+      "pope_random_000506",
+      "visual_counterfact_color_000165",
+      "visual_counterfact_color_000178",
+      "visual_counterfact_color_000230",
+      "visual_counterfact_color_000396",
+      "visual_counterfact_color_000489",
+      "visual_counterfact_size_000115",
+      "visual_counterfact_size_000273",
+      "visual_counterfact_size_000332",
+      "visual_counterfact_size_000487"
+    ],
+    "pattern_counts": {
+      "0000": 43,
+      "0001": 82,
+      "0010": 4,
+      "0011": 138,
+      "0100": 2,
+      "0101": 1,
+      "0110": 3,
+      "0111": 143,
+      "1001": 5,
+      "1011": 5,
+      "1100": 1,
+      "1101": 1,
+      "1110": 1,
+      "1111": 771
+    }
+  }
+}

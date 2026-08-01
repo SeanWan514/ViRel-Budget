@@ -1,0 +1,28 @@
+{
+  "approved_for_frozen_phase_b": true,
+  "artifacts": {
+    "dense_agreement_json": "dense_environment_agreement.json",
+    "energy_summary_csv": "measured_efficiency_summary.csv",
+    "monotonicity_csv": "monotonicity_summary.csv",
+    "random_comparison_csv": "paired_random_comparison.csv",
+    "strict_summary_csv": "strict_safety_summary.csv"
+  },
+  "completion_audit_sha256": "b080356e6c1bb389c94ff6e19fea026dcc11209882013b3facad9483917c5a09",
+  "gate_checks": {
+    "at_least_one_informed_method_reaches_85pct_strict_safety_at_budget_432_in_both_models": true,
+    "cross_model_consistency_floor_is_met": true,
+    "scope_beats_random_by_at_least_5pp_at_budget_64_in_both_models": true,
+    "scope_budget64_reduces_measured_energy_and_latency_by_at_least_10pct_in_both_models": true,
+    "six_cell_integrity": true
+  },
+  "gate_status_note": "The qualitative gate dimensions were frozen before Phase A. Numeric pass thresholds were operationalized during the development-stage audit and are not confirmatory endpoints.",
+  "interpretation": "Proceed to the sealed prospective phase. Phase A supports a risk-efficiency-frontier hypothesis, especially for SCOPE, but does not by itself prove a deployable green controller.",
+  "limitations": [
+    "Phase A is development evidence; it cannot establish prospective controller performance.",
+    "Random dense energy is inherited from the identical FastV dense run because reused dense calls were not re-executed.",
+    "FastV energy improvements are small or inconsistent; Green claims must be method- and hardware-specific.",
+    "Strict safety is intervention-defined reliance preservation, not universal semantic-grounding certification.",
+    "Non-monotonic budget patterns require budget-specific safety prediction rather than assuming that more tokens always repair behavior."
+  ],
+  "phase": "A_common_1200_scientific_gate"
+}

@@ -1,0 +1,19 @@
+{
+  "allowed_template_question_overlaps": 448,
+  "checksums": {
+    "deployment_samples": "74b2de46a1b3e05b15822d595d6fb8eb4fa5fbea012aa4f307833dc1d6498d01",
+    "hidden_evaluation_labels": "e20b38ef17d82787d577f96d427a2d66031380165355102f80e8f4b8cf2c001d",
+    "source_development": "4c9d8e92b594c9ac8e2bc549f5759188a22a58581d910e9793f37f267bb66de0",
+    "source_groups": "282a7308669b8a0368e71378832d0d6fe064c5e098ce97a11e14fa8f7807a06a",
+    "source_prospective": "9765efb701f9042bfdff00054def4a20a8e772cd2330fda66c681058796f738f"
+  },
+  "deployment_contains_gold_labels": false,
+  "development_sample_count": 1200,
+  "isolation_rules": [
+    "exact image SHA-256",
+    "normalized exact non-template question (frequency below 5)"
+  ],
+  "sample_count": 900,
+  "source_group_count": 819,
+  "status": "frozen_before_inference"
+}

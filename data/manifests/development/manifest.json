@@ -1,0 +1,75 @@
+{
+  "by_dataset": {
+    "mmstar": 400,
+    "pope_adversarial": 134,
+    "pope_popular": 133,
+    "pope_random": 133,
+    "visual_counterfact_color": 200,
+    "visual_counterfact_size": 200
+  },
+  "by_family": {
+    "mmstar": 400,
+    "pope": 400,
+    "visual_counterfact": 400
+  },
+  "by_split": {
+    "test": 972,
+    "validation": 228
+  },
+  "dataset_name": "paper_1200_balanced",
+  "irrelevant_pool_size": 48,
+  "mmstar_category_balance": {
+    "coarse perception": 66,
+    "fine-grained perception": 66,
+    "instance reasoning": 67,
+    "logical reasoning": 68,
+    "math": 66,
+    "science & technology": 67
+  },
+  "mmstar_l2_category_balance": {
+    "biology & chemistry & physics": 23,
+    "code & sequence reasoning": 23,
+    "common reasoning": 23,
+    "cross-instance attribute reasoning": 23,
+    "cross-instance relation reasoning": 22,
+    "diagram reasoning": 22,
+    "electronics & energy & mechanical eng.": 22,
+    "geography & earth science & agriculture": 22,
+    "geometry": 22,
+    "image emotion": 22,
+    "image scene and topic": 22,
+    "image style & quality": 22,
+    "localization": 22,
+    "numeric commonsense and calculation": 22,
+    "object counting": 22,
+    "recognition": 22,
+    "single-instance reasoning": 22,
+    "statistical reasoning": 22
+  },
+  "n_exported": 1200,
+  "path_audit": {
+    "missing_counterfactual_sample_ids": [],
+    "missing_image_examples": [],
+    "missing_image_paths": 0
+  },
+  "pope_internal_balance": {
+    "pope_adversarial": 134,
+    "pope_popular": 133,
+    "pope_random": 133
+  },
+  "schema_note": "Raw-balanced before dense-reliant filtering; report post-filter counts and macro-averages after model runs.",
+  "seed": 13,
+  "targets": {
+    "mmstar": 400,
+    "pope": 400,
+    "visual_counterfact": 400
+  },
+  "visual_counterfact_counterfactual_coverage": {
+    "missing_counterfactual_paths": 0,
+    "n_visual_counterfact": 400
+  },
+  "visual_counterfact_internal_balance": {
+    "visual_counterfact_color": 200,
+    "visual_counterfact_size": 200
+  }
+}

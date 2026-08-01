@@ -1,0 +1,8 @@
+{
+  "first_epoch": 1785253137.704987,
+  "last_epoch": 1785253234.469503,
+  "sources": [
+    "results/replication210x3/draw_2102/7b_dense/telemetry_attempts/attempt_001/nvidia_smi_samples.csv"
+  ],
+  "valid_samples": 484
+}

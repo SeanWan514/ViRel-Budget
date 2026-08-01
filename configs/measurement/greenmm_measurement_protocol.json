@@ -1,0 +1,58 @@
+{
+  "status": "frozen_before prospective runs",
+  "version": "greenmm-measurement-1.0",
+  "hardware_control": {
+    "same_gpu_model_within_comparison_block": true,
+    "record_gpu_uuid_driver_memory_and_power_limit": true,
+    "stable_power_and_clock_settings_when_provider_permits": true,
+    "cuda_synchronize_around_timed_inference": true
+  },
+  "measurement_design": {
+    "warmup_queries_per_loaded_model": 3,
+    "minimum_repeated_blocks": 3,
+    "method_order": "deterministically randomized or Latin-square counterbalanced",
+    "telemetry_interval_ms": 200,
+    "model_loading_excluded_from_primary_inference_energy": true,
+    "model_loading_reported_separately": true,
+    "controller_planning_reported_separately": true,
+    "failed_runs_retained_and_reported": true
+  },
+  "system_boundaries": {
+    "primary": "GPU device energy during the exact prospective controller inference window plus measured controller CPU latency",
+    "secondary": [
+      "whole loaded-model run energy",
+      "model-load energy",
+      "estimated CPU and RAM energy",
+      "facility-adjusted energy using disclosed PUE",
+      "estimated carbon using disclosed grid intensity"
+    ],
+    "evaluator_interventions": "excluded from deployment energy and reported separately",
+    "controller_training": "reported once and amortized as a secondary result"
+  },
+  "primary_metrics": [
+    "joules per query",
+    "latency per query",
+    "queries per second",
+    "unconditional task accuracy",
+    "unsafe acceptance rate",
+    "dense avoidance rate",
+    "supported correct answers per kWh"
+  ],
+  "mechanism_metrics_not_green_proof": [
+    "visual tokens retained",
+    "token reduction",
+    "estimated FLOPs"
+  ],
+  "uncertainty": {
+    "report_block_level_mean_and_95pct_confidence_interval": true,
+    "paired_comparisons_on_identical_ordered_query_blocks": true,
+    "do_not_rank_overlapping_or_noise_scale_effects": true
+  },
+  "green_claim_gate": {
+    "requires_lower_end_to_end_joules_per_query": true,
+    "requires_competitive_unconditional_accuracy": true,
+    "requires_controlled_unsafe_acceptance": true,
+    "requires_improved_supported_correct_answers_per_kWh": true,
+    "requires_effect_larger_than_measurement_uncertainty": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label_rows": 3600,
+  "method": "fastv",
+  "sample_count": 900,
+  "source_config": "configs/prospective900_llava15_13b_fastv.json",
+  "source_records": "results/prospective900_llava15_13b_fastv/records_with_measured_energy.jsonl",
+  "strict_target": "original-answer fidelity AND dense intervention-answer trajectory fidelity"
+}

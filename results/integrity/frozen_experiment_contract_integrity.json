@@ -1,0 +1,18 @@
+{
+  "checksums": {
+    "configs/frozen_controller_protocol.json": "5629d54a6d050f98b2fa3eeaeda98152f89ed02d48f65105507cd674692a698d",
+    "configs/greenmm_measurement_protocol.json": "0dfc005902b8ee626db415547a7993f2ec60bc8148bc19be5d69ead735dd73f5",
+    "results/frozen_controllers/fastv_controller.json": "841e93f116207314c7238c719a899977a35e2c5c68c750f5ef291e6ae0667805",
+    "results/frozen_controllers/fastv_controller.sha256": "7880427fa2a193b7177a882972371d63696082c782a65bd216dcfb13c728dbd0",
+    "results/frozen_controllers/scope_controller.json": "49adc30ce89185c0b118cbc6002fa17b6830539b55e2522959dcbae88e82b519",
+    "results/frozen_controllers/scope_controller.sha256": "2e3b0bb3d84e9620d46dcf8c7d9664820e9440f1331e94587aceed3f2fbba4ea",
+    "scripts/analyze_greenmm_telemetry.py": "86e0d826ff1ab3afb1184f41d5325ee4c97f82c4f00ef5afda3dfde547e8ac36",
+    "scripts/fit_frozen_controller.py": "4d9d5b9c5bda08c06f995ad92e86e21ee0ba9949f1e96ea33b1a8ed01ae07609",
+    "scripts/freeze_prospective_manifest.py": "2e521be57860aa914e64cca88d35a2e6f68a498abf440056ac42b6bfce235828",
+    "scripts/run_frozen_controller.py": "64daa0be1f61a4df98da4a56ed21461255a528bdb7d725ce24774d673a3d1487",
+    "virel_budget/datasets/deployment_jsonl.py": "31f96619fc2444b2cf632d0262c38475d8d7458500433a07478d34c0a9d369bc",
+    "virel_budget/frozen_controller.py": "ced6247a48ee882db5886c1609c88f90e966225348baa8470ee8faa026ff4db5"
+  },
+  "file_count": 12,
+  "status": "frozen before the three extension experiments"
+}

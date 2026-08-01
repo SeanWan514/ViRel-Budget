@@ -1,0 +1,94 @@
+{
+  "analysis": {
+    "bootstrap_iterations": 1000
+  },
+  "backend": {
+    "conv_mode": "llava_v1",
+    "device": "cuda",
+    "image_aspect_ratio": "pad",
+    "load_4bit": false,
+    "load_8bit": false,
+    "max_new_tokens": 24,
+    "model_path": "liuhaotian/llava-v1.5-7b",
+    "name": "scope_llava",
+    "scope_repo": "/workspace/virel_external/SCOPE"
+  },
+  "cost": {
+    "base_ms": 0.0,
+    "dense_token_count": null,
+    "dollar_per_1k_ms": 2e-05,
+    "energy_joule_per_ms": 0.004,
+    "per_token_ms": 1.0
+  },
+  "dataset": {
+    "limit": null,
+    "name": "replication210x3_draw2101",
+    "path": "data/replication_210x3/draw_2101/deployment_samples.jsonl",
+    "test_split": "replication",
+    "validation_split": "replication"
+  },
+  "interventions": [
+    {
+      "name": "gray",
+      "type": "gray"
+    },
+    {
+      "name": "blur",
+      "radius": 8.0,
+      "type": "blur"
+    },
+    {
+      "name": "irrelevant",
+      "pool": "data/paper_1200/irrelevant",
+      "type": "irrelevant"
+    },
+    {
+      "applies_to": [
+        "visual_counterfact_color",
+        "visual_counterfact_size"
+      ],
+      "name": "counterfactual",
+      "type": "counterfactual"
+    }
+  ],
+  "outputs": {
+    "dir": "results/replication210x3_draw2101_llava15_7b_scope"
+  },
+  "policy": {
+    "dense_vem_min": 0.1,
+    "prefer_rr": true,
+    "rho_grid": [
+      0.5,
+      0.7,
+      0.9
+    ],
+    "tau_grid": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  "pruning": {
+    "budget_schedule": [
+      64,
+      128,
+      256,
+      432
+    ],
+    "dense_budget": "full",
+    "methods": [
+      "scope"
+    ]
+  },
+  "replication_protocol": {
+    "artifact": "results/replication210x3_protocol.json",
+    "controller_refit": false,
+    "draw_seed": 2101,
+    "labels_used_during_execution": false,
+    "sample_count": 210
+  },
+  "reuse_existing_interventions": true,
+  "run_name": "replication210x3_draw2101_llava15_7b_scope",
+  "seed": 13
+}

@@ -1,0 +1,1068 @@
+{
+  "boundary": "GPU device energy integrated over frozen single-action inference window",
+  "caution": "Per-action integration is noisy for short calls. A complete block-level value is available only for executions completed in one attempt; resumed executions use the summed call-window value across merged attempts.",
+  "complete_execution_block_energy_available": true,
+  "complete_execution_inference_window_energy_joule": 14544.959017776246,
+  "complete_execution_inference_window_joule_per_query": 69.26170960845832,
+  "final_attempt_inference_window_energy_joule": 14544.959017776246,
+  "final_attempt_inference_window_joule_per_query": 69.26170960845832,
+  "final_attempt_query_count": 210,
+  "mean_controller_cpu_latency_ms": 0.013856476081335651,
+  "per_action": [
+    {
+      "gpu_energy_joule": 54.32020425319672,
+      "sample_id": "visual_counterfact_size_000296",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 44.704397035837175,
+      "sample_id": "pope_random_000330",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 48.51047450184823,
+      "sample_id": "pope_popular_002449",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 64.93697199344635,
+      "sample_id": "visual_counterfact_color_000287",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.79184825301169,
+      "sample_id": "mmstar_000498",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 62.74140640616417,
+      "sample_id": "pope_popular_000656",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 78.16623930096627,
+      "sample_id": "visual_counterfact_size_000684",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.66312630653381,
+      "sample_id": "pope_popular_000127",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 66.48247555375099,
+      "sample_id": "visual_counterfact_color_000299",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.960221836566916,
+      "sample_id": "pope_adversarial_000398",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.28208853602409,
+      "sample_id": "pope_popular_000256",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.561426841020584,
+      "sample_id": "pope_adversarial_002634",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 70.51666463732718,
+      "sample_id": "mmstar_001346",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.91308165788651,
+      "sample_id": "pope_popular_000357",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 80.97860306739807,
+      "sample_id": "visual_counterfact_size_000289",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 64.97241931915283,
+      "sample_id": "visual_counterfact_color_000073",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.2499644100666,
+      "sample_id": "mmstar_000254",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 61.33018920898438,
+      "sample_id": "mmstar_001097",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.28686169624329,
+      "sample_id": "pope_popular_000360",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 61.78966576457024,
+      "sample_id": "mmstar_000502",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.000765012502676,
+      "sample_id": "visual_counterfact_color_000306",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 163.2383243072033,
+      "sample_id": "mmstar_000324",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 61.93762941122055,
+      "sample_id": "mmstar_000788",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 64.58251441478728,
+      "sample_id": "visual_counterfact_size_000212",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 195.13209510684013,
+      "sample_id": "mmstar_001498",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.60259725213051,
+      "sample_id": "mmstar_001162",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 132.01686318874357,
+      "sample_id": "mmstar_000796",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.31833419203758,
+      "sample_id": "mmstar_001402",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.58180291652679,
+      "sample_id": "visual_counterfact_color_000312",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.3418467605114,
+      "sample_id": "mmstar_001111",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.25505714416504,
+      "sample_id": "pope_popular_002670",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.07454828023911,
+      "sample_id": "pope_adversarial_000291",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.777920677661896,
+      "sample_id": "mmstar_000794",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 53.527730236053465,
+      "sample_id": "pope_random_000014",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.73671897649765,
+      "sample_id": "mmstar_000333",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.89337995409966,
+      "sample_id": "mmstar_000105",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 63.039232074022294,
+      "sample_id": "mmstar_001167",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 95.77220451235772,
+      "sample_id": "mmstar_000758",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.78961378574371,
+      "sample_id": "mmstar_000167",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 363.5015200269222,
+      "sample_id": "mmstar_001283",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 20.05718208670616,
+      "sample_id": "visual_counterfact_size_000527",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 30.78165254831314,
+      "sample_id": "visual_counterfact_size_000044",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 39.29549465537072,
+      "sample_id": "visual_counterfact_size_000637",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 34.70094566941261,
+      "sample_id": "pope_random_001362",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 38.79456144571305,
+      "sample_id": "visual_counterfact_color_000149",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 50.021887547969826,
+      "sample_id": "pope_random_001764",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 53.31085770606995,
+      "sample_id": "visual_counterfact_size_000352",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.59623525500298,
+      "sample_id": "mmstar_000911",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 65.33758413910866,
+      "sample_id": "mmstar_001128",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.57640309333801,
+      "sample_id": "visual_counterfact_color_000248",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 157.73904595732688,
+      "sample_id": "mmstar_000028",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 67.89389540553093,
+      "sample_id": "visual_counterfact_size_000698",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 53.799721947908395,
+      "sample_id": "pope_random_001122",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 62.43417484998702,
+      "sample_id": "visual_counterfact_size_000152",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 64.1323772764206,
+      "sample_id": "visual_counterfact_size_000506",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 72.00400348901749,
+      "sample_id": "visual_counterfact_color_000271",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.593419028520586,
+      "sample_id": "mmstar_001006",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 53.69710273027421,
+      "sample_id": "pope_random_000175",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.03519771933556,
+      "sample_id": "pope_random_000491",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.71569851636887,
+      "sample_id": "pope_adversarial_000254",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 75.57723583340645,
+      "sample_id": "visual_counterfact_size_000504",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 71.37754928827286,
+      "sample_id": "mmstar_001320",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 86.93592319607734,
+      "sample_id": "visual_counterfact_size_000193",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 61.66375160574913,
+      "sample_id": "pope_random_000579",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 64.32245365619659,
+      "sample_id": "mmstar_000555",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 62.261356041431426,
+      "sample_id": "mmstar_001302",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.92008590221405,
+      "sample_id": "visual_counterfact_color_000298",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 87.08983660817147,
+      "sample_id": "visual_counterfact_color_000339",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 53.64152297973632,
+      "sample_id": "mmstar_000139",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.51772728323937,
+      "sample_id": "mmstar_001215",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 52.16254918813705,
+      "sample_id": "pope_random_000382",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.736493339538576,
+      "sample_id": "mmstar_001178",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 51.79952744007111,
+      "sample_id": "pope_popular_000106",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 51.479278850555424,
+      "sample_id": "mmstar_000381",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 85.94557615399361,
+      "sample_id": "mmstar_000637",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.36332201123238,
+      "sample_id": "visual_counterfact_color_000101",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.26839091300964,
+      "sample_id": "pope_adversarial_002772",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.05045775294303,
+      "sample_id": "pope_popular_000320",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.22222677707672,
+      "sample_id": "pope_popular_002490",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.52112029910088,
+      "sample_id": "pope_adversarial_002347",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.62338096499443,
+      "sample_id": "visual_counterfact_color_000213",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.013632055521015,
+      "sample_id": "mmstar_000464",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.1448861539364,
+      "sample_id": "pope_popular_000056",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 65.63281759381294,
+      "sample_id": "visual_counterfact_color_000476",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.664390788078315,
+      "sample_id": "mmstar_000260",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.35854137659073,
+      "sample_id": "pope_random_002592",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.24911951065064,
+      "sample_id": "pope_random_002966",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.83525124073029,
+      "sample_id": "visual_counterfact_size_000242",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.23383590459824,
+      "sample_id": "mmstar_000054",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 63.23528103232384,
+      "sample_id": "visual_counterfact_size_000721",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.52498641014099,
+      "sample_id": "visual_counterfact_color_000327",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 63.47059400081635,
+      "sample_id": "mmstar_001095",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 62.049722707271584,
+      "sample_id": "mmstar_001323",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 86.57579207897187,
+      "sample_id": "visual_counterfact_size_000322",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.49365866899491,
+      "sample_id": "pope_adversarial_000100",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 53.955251805782325,
+      "sample_id": "visual_counterfact_color_000419",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.109515700340275,
+      "sample_id": "mmstar_000459",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.0448753964901,
+      "sample_id": "visual_counterfact_color_000063",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.19026449561119,
+      "sample_id": "visual_counterfact_color_000310",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 141.45586093425752,
+      "sample_id": "mmstar_001351",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 63.48256627202034,
+      "sample_id": "mmstar_000647",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.82418477535248,
+      "sample_id": "pope_random_000039",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.58965699076653,
+      "sample_id": "mmstar_000182",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 64.79170382738114,
+      "sample_id": "visual_counterfact_size_000126",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.38226060390473,
+      "sample_id": "mmstar_001221",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 63.92298500657082,
+      "sample_id": "mmstar_000253",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.75689208745956,
+      "sample_id": "visual_counterfact_color_000080",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.31136196374892,
+      "sample_id": "visual_counterfact_color_000455",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.89217147827148,
+      "sample_id": "pope_adversarial_000422",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.97773575782776,
+      "sample_id": "visual_counterfact_size_000230",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 104.03623774051667,
+      "sample_id": "mmstar_001321",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 102.7674408185482,
+      "sample_id": "mmstar_001191",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.60785831928253,
+      "sample_id": "pope_adversarial_001519",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.554834336042404,
+      "sample_id": "pope_random_000474",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 107.47673665285112,
+      "sample_id": "mmstar_000491",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 68.25824642181396,
+      "sample_id": "visual_counterfact_size_000089",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 65.53322719335556,
+      "sample_id": "visual_counterfact_color_000167",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.37450194358826,
+      "sample_id": "visual_counterfact_color_000131",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.583754249811165,
+      "sample_id": "visual_counterfact_color_000166",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 202.87538536071776,
+      "sample_id": "mmstar_001039",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 93.76358965992927,
+      "sample_id": "mmstar_001247",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.94309938192368,
+      "sample_id": "visual_counterfact_color_000102",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 62.3045366203785,
+      "sample_id": "visual_counterfact_color_000064",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 61.50669109344483,
+      "sample_id": "visual_counterfact_size_000187",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 51.415030288696286,
+      "sample_id": "pope_popular_001278",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 52.66361437559127,
+      "sample_id": "pope_adversarial_001206",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 52.41400845050811,
+      "sample_id": "pope_popular_002232",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 50.75527665495872,
+      "sample_id": "pope_random_002082",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 55.991680027246474,
+      "sample_id": "pope_adversarial_000595",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 64.77837627887725,
+      "sample_id": "visual_counterfact_size_000582",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.42436126470565,
+      "sample_id": "pope_random_000375",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.487106839418416,
+      "sample_id": "visual_counterfact_size_000626",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 61.25399702310562,
+      "sample_id": "pope_random_000900",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 79.11913595199586,
+      "sample_id": "visual_counterfact_size_000564",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 55.87945088386535,
+      "sample_id": "pope_adversarial_000122",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 61.29699306488037,
+      "sample_id": "visual_counterfact_color_000290",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 66.20709174156188,
+      "sample_id": "mmstar_001411",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 64.7605192887783,
+      "sample_id": "pope_popular_000429",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.65347179412842,
+      "sample_id": "visual_counterfact_size_000605",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 98.7706254839897,
+      "sample_id": "mmstar_000284",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.71829432487489,
+      "sample_id": "pope_popular_002328",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.632044861316686,
+      "sample_id": "pope_random_000055",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.572165405750276,
+      "sample_id": "mmstar_000289",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 65.4443026292324,
+      "sample_id": "visual_counterfact_color_000215",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.69374866485596,
+      "sample_id": "pope_popular_001500",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.503274599313734,
+      "sample_id": "mmstar_000766",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.475665086507796,
+      "sample_id": "pope_popular_002724",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.7298977291584,
+      "sample_id": "mmstar_000540",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 61.401932127475746,
+      "sample_id": "mmstar_000697",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.132493547201165,
+      "sample_id": "pope_adversarial_000324",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.92687231063843,
+      "sample_id": "pope_adversarial_000710",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.981192131042484,
+      "sample_id": "pope_random_000234",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 63.5724399793148,
+      "sample_id": "mmstar_001227",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.3753009724617,
+      "sample_id": "mmstar_000595",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 62.91954526543616,
+      "sample_id": "visual_counterfact_size_000434",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.54067977190018,
+      "sample_id": "visual_counterfact_size_000136",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.890910811424256,
+      "sample_id": "mmstar_000336",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 77.76970850229264,
+      "sample_id": "visual_counterfact_size_000520",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 67.49850911140442,
+      "sample_id": "mmstar_000972",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 65.93086904287338,
+      "sample_id": "visual_counterfact_size_000602",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 62.0730458855629,
+      "sample_id": "pope_adversarial_000151",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.172779618501664,
+      "sample_id": "mmstar_000729",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.9867543566227,
+      "sample_id": "pope_adversarial_000852",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 70.75952788114547,
+      "sample_id": "mmstar_001014",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 69.8374355340004,
+      "sample_id": "mmstar_000781",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 63.3609972512722,
+      "sample_id": "pope_random_000524",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 67.15978556156159,
+      "sample_id": "pope_random_000907",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 61.241268424987794,
+      "sample_id": "pope_adversarial_001308",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.65760068893432,
+      "sample_id": "pope_adversarial_000751",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 74.33675986647606,
+      "sample_id": "visual_counterfact_color_000180",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 65.30629472851753,
+      "sample_id": "pope_popular_000495",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 63.557601919174196,
+      "sample_id": "pope_adversarial_000131",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 66.16821189880372,
+      "sample_id": "pope_adversarial_000490",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.770888693332665,
+      "sample_id": "mmstar_000184",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 70.84808879613877,
+      "sample_id": "visual_counterfact_size_000076",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 73.25722059726715,
+      "sample_id": "visual_counterfact_color_000297",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.809130797386175,
+      "sample_id": "visual_counterfact_color_000235",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.540850017070774,
+      "sample_id": "pope_random_001248",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 83.48633717179298,
+      "sample_id": "visual_counterfact_size_000146",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 65.57350859045982,
+      "sample_id": "mmstar_001047",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.86365207791328,
+      "sample_id": "pope_popular_002808",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.89610706567765,
+      "sample_id": "visual_counterfact_color_000357",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 65.69051682949066,
+      "sample_id": "visual_counterfact_size_000177",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.29200451850891,
+      "sample_id": "pope_adversarial_000722",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.1583737885952,
+      "sample_id": "mmstar_000803",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 58.118687938451764,
+      "sample_id": "mmstar_000935",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 86.05451634287834,
+      "sample_id": "visual_counterfact_size_000411",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.05495995283127,
+      "sample_id": "visual_counterfact_color_000420",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.526786744594574,
+      "sample_id": "pope_popular_000735",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.20190157651902,
+      "sample_id": "pope_popular_000420",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 60.3631653547287,
+      "sample_id": "pope_random_000555",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.97770109176636,
+      "sample_id": "pope_adversarial_000385",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 62.25869733333588,
+      "sample_id": "mmstar_000720",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.81172780275345,
+      "sample_id": "pope_adversarial_000085",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 69.56068817138672,
+      "sample_id": "visual_counterfact_size_000617",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 62.24858537316322,
+      "sample_id": "visual_counterfact_color_000014",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 81.56958724617958,
+      "sample_id": "visual_counterfact_size_000082",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 61.09746198415756,
+      "sample_id": "visual_counterfact_color_000136",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 138.7919798588753,
+      "sample_id": "mmstar_000577",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 146.18972097396852,
+      "sample_id": "mmstar_000257",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 77.19313652515412,
+      "sample_id": "visual_counterfact_size_000068",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 50.61030470967293,
+      "sample_id": "pope_popular_000195",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 54.91483302354813,
+      "sample_id": "mmstar_000142",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 59.44946950435639,
+      "sample_id": "visual_counterfact_color_000385",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 56.11892378807068,
+      "sample_id": "pope_adversarial_002022",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 72.28813831329346,
+      "sample_id": "visual_counterfact_color_000165",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 57.387250976562505,
+      "sample_id": "pope_random_001141",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 150.75849432826044,
+      "sample_id": "mmstar_000802",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 43.07941795349121,
+      "sample_id": "pope_popular_002941",
+      "selected_budget": "dense"
+    },
+    {
+      "gpu_energy_joule": 42.21559310436248,
+      "sample_id": "mmstar_000290",
+      "selected_budget": "dense"
+    }
+  ],
+  "resumed_from_count": 0,
+  "sample_count": 210,
+  "summed_call_window_energy_joule": 14080.259231191874,
+  "summed_call_window_joule_per_query": 67.04885348186606,
+  "telemetry_interval_target_ms": 200
+}

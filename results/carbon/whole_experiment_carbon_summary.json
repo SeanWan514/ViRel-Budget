@@ -1,0 +1,168 @@
+{
+  "artifact_type": "virel_whole_experiment_carbon_ledger",
+  "assumptions": {
+    "carbon_intensity_sensitivity_kgco2e_per_kwh": [
+      0.015,
+      0.08
+    ],
+    "central_carbon_intensity_kgco2e_per_kwh": 0.03283,
+    "central_pue": 1.2,
+    "cloud_price_usd_per_hour": 2.0,
+    "hardware": "one NVIDIA RTX PRO 6000 Blackwell Server Edition unless per-run metadata states otherwise",
+    "pue_sensitivity": [
+      1.1,
+      1.4
+    ],
+    "region": "RunPod EUR-IS-1; CodeCarbon geolocation reports Iceland/capital region"
+  },
+  "boundaries": [
+    "Direct NVIDIA figures are GPU-wrapper energy and include model load/warm-up when the wrapper surrounded them.",
+    "CodeCarbon is available only for instrumented runs and reports PUE=1.0 by default.",
+    "CodeCarbon detected host-wide CPU/RAM resources larger than the pod allocation; its CPU/RAM totals are secondary estimates, not direct pod measurements.",
+    "The location/PUE-adjusted GPU estimate is the consistent whole-program primary footprint.",
+    "Pod idle time outside recorded wrappers, embodied carbon, networking, and storage are excluded unless separately reconstructed.",
+    "One failed replication smoke attempt is Tier 2 because its numeric NVIDIA and CodeCarbon summaries survive only in the preserved combined log.",
+    "The cloud-cost field is a runtime proxy, not a billing statement."
+  ],
+  "by_family": {
+    "controller_smoke": {
+      "cloud_cost_usd_runtime_proxy": 0.04618223137325711,
+      "codecarbon_energy_kwh": 0.0,
+      "codecarbon_runs": 0,
+      "duration_h": 0.023091115686628555,
+      "gpu_emissions_kgco2e_central": 4.466962881445735e-05,
+      "gpu_emissions_kgco2e_high": 0.00012699254815766128,
+      "gpu_emissions_kgco2e_low": 1.87087236125126e-05,
+      "measured_gpu_energy_kwh": 0.0011338620371219757,
+      "runs": 1
+    },
+    "feature_pilot": {
+      "cloud_cost_usd_runtime_proxy": 0.10189039813147652,
+      "codecarbon_energy_kwh": 0.0,
+      "codecarbon_runs": 0,
+      "duration_h": 0.05094519906573826,
+      "gpu_emissions_kgco2e_central": 0.00017010158258377406,
+      "gpu_emissions_kgco2e_high": 0.0004835865887243044,
+      "gpu_emissions_kgco2e_low": 7.124266708884843e-05,
+      "measured_gpu_energy_kwh": 0.004317737399324147,
+      "runs": 2
+    },
+    "legacy_120x3": {
+      "cloud_cost_usd_runtime_proxy": 1.728379031419754,
+      "codecarbon_energy_kwh": 0.28098551376052217,
+      "codecarbon_runs": 6,
+      "duration_h": 0.864189515709877,
+      "gpu_emissions_kgco2e_central": 0.006987950541301985,
+      "gpu_emissions_kgco2e_high": 0.019866241766316944,
+      "gpu_emissions_kgco2e_low": 0.0029267231173591927,
+      "measured_gpu_energy_kwh": 0.17737715862782988,
+      "runs": 6
+    },
+    "original_1200": {
+      "cloud_cost_usd_runtime_proxy": 5.29218371298578,
+      "codecarbon_energy_kwh": 0.8751394619914084,
+      "codecarbon_runs": 2,
+      "duration_h": 2.64609185649289,
+      "gpu_emissions_kgco2e_central": 0.021854889337593678,
+      "gpu_emissions_kgco2e_high": 0.06213188155676952,
+      "gpu_emissions_kgco2e_low": 0.009153357550774082,
+      "measured_gpu_energy_kwh": 0.5547489424711565,
+      "runs": 2
+    },
+    "phase_a_1200": {
+      "cloud_cost_usd_runtime_proxy": 15.255419161849552,
+      "codecarbon_energy_kwh": 3.0171866172861805,
+      "codecarbon_runs": 6,
+      "duration_h": 7.627709580924776,
+      "gpu_emissions_kgco2e_central": 0.08451185192941968,
+      "gpu_emissions_kgco2e_high": 0.24026112844184694,
+      "gpu_emissions_kgco2e_low": 0.03539561267223639,
+      "measured_gpu_energy_kwh": 2.1451886468022057,
+      "runs": 6
+    },
+    "phase_b_controller_execution": {
+      "cloud_cost_usd_runtime_proxy": 1.456004548602634,
+      "codecarbon_energy_kwh": 0.19983919400960123,
+      "codecarbon_runs": 15,
+      "duration_h": 0.728002274301317,
+      "gpu_emissions_kgco2e_central": 0.004593540842955822,
+      "gpu_emissions_kgco2e_high": 0.01305910687407483,
+      "gpu_emissions_kgco2e_low": 0.0019238862805556675,
+      "measured_gpu_energy_kwh": 0.11659916851852527,
+      "runs": 15
+    },
+    "phase_b_evaluation_grid": {
+      "cloud_cost_usd_runtime_proxy": 11.620396794610551,
+      "codecarbon_energy_kwh": 2.300599704244608,
+      "codecarbon_runs": 6,
+      "duration_h": 5.8101983973052755,
+      "gpu_emissions_kgco2e_central": 0.06447928106355219,
+      "gpu_emissions_kgco2e_high": 0.18330996748699985,
+      "gpu_emissions_kgco2e_low": 0.027005486281566942,
+      "measured_gpu_energy_kwh": 1.6366961382767842,
+      "runs": 6
+    },
+    "replication_210x3": {
+      "cloud_cost_usd_runtime_proxy": 1.5974625837802883,
+      "codecarbon_energy_kwh": 0.2028954049823395,
+      "codecarbon_runs": 24,
+      "duration_h": 0.7987312918901441,
+      "gpu_emissions_kgco2e_central": 0.004438386306034905,
+      "gpu_emissions_kgco2e_high": 0.012618013663212241,
+      "gpu_emissions_kgco2e_low": 0.0018589037985982323,
+      "measured_gpu_energy_kwh": 0.11266083627868076,
+      "runs": 24
+    },
+    "replication_smoke": {
+      "cloud_cost_usd_runtime_proxy": 0.11582053595119052,
+      "codecarbon_energy_kwh": 0.009832074809998741,
+      "codecarbon_runs": 2,
+      "duration_h": 0.05791026797559526,
+      "gpu_emissions_kgco2e_central": 0.00012787671951602458,
+      "gpu_emissions_kgco2e_high": 0.0003635443340896221,
+      "gpu_emissions_kgco2e_low": 5.355787064713184e-05,
+      "measured_gpu_energy_kwh": 0.0032459315543716264,
+      "runs": 2
+    },
+    "replication_smoke_failed": {
+      "cloud_cost_usd_runtime_proxy": 0.06236173113187154,
+      "codecarbon_energy_kwh": 0.005404119654104057,
+      "codecarbon_runs": 1,
+      "duration_h": 0.03118086556593577,
+      "gpu_emissions_kgco2e_central": 7.376633493136401e-05,
+      "gpu_emissions_kgco2e_high": 0.00020971239497189484,
+      "gpu_emissions_kgco2e_low": 3.089512961639523e-05,
+      "measured_gpu_energy_kwh": 0.001872432097963347,
+      "runs": 1
+    },
+    "smolvlm_verification": {
+      "cloud_cost_usd_runtime_proxy": 1.0653253377808465,
+      "codecarbon_energy_kwh": 0.12675651403901878,
+      "codecarbon_runs": 1,
+      "duration_h": 0.5326626688904232,
+      "gpu_emissions_kgco2e_central": 0.0025994616699281992,
+      "gpu_emissions_kgco2e_high": 0.007390082928011938,
+      "gpu_emissions_kgco2e_low": 0.0010887175742160448,
+      "measured_gpu_energy_kwh": 0.06598288328582089,
+      "runs": 1
+    }
+  },
+  "excluded": [
+    {
+      "path": "results/_stray_flattened_pull_1784713619/hardware_monitor/nvidia_smi_summary.json",
+      "reason": "duplicate transfer artifact"
+    }
+  ],
+  "scope": "All unique NVIDIA wrapper summaries recoverable in the repository, plus explicitly tiered preserved failed-run evidence.",
+  "totals": {
+    "cloud_cost_usd_runtime_proxy": 38.3414260676172,
+    "codecarbon_energy_kwh": 7.018638604777782,
+    "codecarbon_runs": 63.0,
+    "duration_h": 19.1707130338086,
+    "gpu_emissions_kgco2e_central": 0.18988177595663208,
+    "gpu_emissions_kgco2e_high": 0.5398202585831757,
+    "gpu_emissions_kgco2e_low": 0.07952709166627143,
+    "measured_gpu_energy_kwh": 4.819823737349784,
+    "runs": 66.0
+  }
+}

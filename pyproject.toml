@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "virel-budget"
+version = "1.0.0"
+description = "Reliability-aware visual-token budgeting for greener multimodal inference."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+model = [
+    "torch>=2.3",
+    "transformers>=4.50",
+    "accelerate>=0.30",
+    "codecarbon>=2.4",
+]
+research = [
+    "torch>=2.3",
+    "transformers>=4.50",
+    "datasets>=2.19",
+    "accelerate>=0.30",
+    "codecarbon>=2.4",
+]
+plot = [
+    "matplotlib>=3.8",
+]
+test = []
+
+[project.scripts]
+virel-budget = "virel_budget.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["virel_budget*"]

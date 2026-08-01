@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "scope": {
+    "development_queries": 1200,
+    "prospective_queries": 900,
+    "combined_queries": 2100,
+    "models": ["llava-1.5-7b", "llava-1.5-13b"],
+    "methods": ["fastv", "scope", "random"],
+    "phase_a_cells": 6,
+    "phase_b_cells": 6,
+    "phase_a_records_per_cell": 20000,
+    "phase_b_records_per_cell": 15000
+  },
+  "phase_b_grid_measurement": {
+    "duration_hours": 5.8102,
+    "measured_gpu_energy_kwh": 1.6367,
+    "boundary": "Six 900-query prospective evaluation grids only; excludes Phase A, controller executions, setup, downloads, CPU/RAM, and facility overhead."
+  },
+  "verification": {
+    "phase_a_all_complete": true,
+    "phase_b_all_complete": true,
+    "prospective_execution_preceded_label_reveal": true,
+    "deployment_single_backend_invocation_per_query": true,
+    "strict_labels_present": true,
+    "measured_energy_present": true,
+    "protected_framework_artifacts_unchanged": 31,
+    "remote_unittest_passed": 29,
+    "remote_unittest_failed": 0,
+    "runtime_contract_amendments_documented": 5
+  },
+  "sha256": {
+    "phase_a_audit": "b080356e6c1bb389c94ff6e19fea026dcc11209882013b3facad9483917c5a09",
+    "phase_a_gate": "5e4b258d4cade4f449df618016b56ee1dd1261b26c329af0ac124ad3e2a239f0",
+    "phase_b_approval": "51e95e6ba41aca26bbebd73bb60b07de53a8b2cb3867810e689883c0cd9195eb",
+    "prospective_reveal_manifest": "8ccb5bd21ea62b93f1c700b6a2474ef3b25abc346a80d5fbbed8a98fae36af60",
+    "phase_b_audit": "c7ae74b9da91c70ebdfee9071cbcd5e3dfae9392f79786edc847bf39c3f83477",
+    "prospective_analysis": "6abf57517d36d0317fb12be97feb8feab5124d332cb8a1a4b4a25c1aab9e8532",
+    "controller_summary": "f8dfd0b7ed22ecd50812ed62c2c329c922984d48714f582867250ae13fb8b624",
+    "fixed_budget_summary": "4afe45c406dbb79bd0ff7abd19797d045f0e6d1a623b677af23c5488c33c4410",
+    "runtime_amendment_ledger": "7c28c52805e5b40bfac07eefbcf3a6f64f7ed53c7ae3c9a9ab3534583c2f9564"
+  },
+  "claim_decision": {
+    "prospective_safety_bound_met_cells": 6,
+    "statistically_positive_energy_saving_cells": 2,
+    "deployable_green_cells": ["llava-1.5-13b/fastv", "llava-1.5-13b/scope"],
+    "allowed": "Prospectively reliable, model- and method-dependent reliability-efficiency frontier with demonstrated green operating points on 13B FastV and 13B SCOPE.",
+    "prohibited": "Universal energy-saving or universally green controller."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "artifact_type": "virel_replication_210x3_gate_r",
+  "cells": [
+    {
+      "method": "fastv",
+      "model": "7b",
+      "replication_level": "failed_green_or_risk"
+    },
+    {
+      "method": "scope",
+      "model": "7b",
+      "replication_level": "strong"
+    },
+    {
+      "method": "random",
+      "model": "7b",
+      "replication_level": "failed_green_or_risk"
+    },
+    {
+      "method": "fastv",
+      "model": "13b",
+      "replication_level": "failed_green_or_risk"
+    },
+    {
+      "method": "scope",
+      "model": "13b",
+      "replication_level": "strong"
+    },
+    {
+      "method": "random",
+      "model": "13b",
+      "replication_level": "failed_green_or_risk"
+    }
+  ],
+  "claim_rule": "Only strong cells support workload-replicated green deployment; mixed cells are workload-sensitive.",
+  "completion_audit_sha256": "da843db03d46315a665893480e9274dae1fd408655589ab43b34ec76f9e3e03d",
+  "decision": "proceed_to_environmental_statistical_and_paper_analysis",
+  "protocol_sha256": "7a403a5e2ca56f904fa38ca759f4973955cdb34ffea1d1ed7d426c0943879bb5",
+  "replication_complete": true,
+  "strong_cells": [
+    {
+      "method": "scope",
+      "model": "7b",
+      "replication_level": "strong"
+    },
+    {
+      "method": "scope",
+      "model": "13b",
+      "replication_level": "strong"
+    }
+  ]
+}

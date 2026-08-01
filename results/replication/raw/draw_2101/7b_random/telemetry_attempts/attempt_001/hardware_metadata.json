@@ -1,0 +1,13 @@
+{
+  "gpus": [
+    {
+      "driver_version": "580.159.03",
+      "index": 0,
+      "memory_total_mb": 97887.0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_limit_w": 600.0,
+      "uuid": "GPU-a9cd8baa-c5d6-0ca9-acda-780f6954ed8d"
+    }
+  ],
+  "metadata_error": null
+}

@@ -1,0 +1,59 @@
+diff --git a/src/transformers/src/transformers/models/llama/modeling_llama.py b/src/transformers/src/transformers/models/llama/modeling_llama.py
+index c40868c..5c46206 100644
+--- a/src/transformers/src/transformers/models/llama/modeling_llama.py
++++ b/src/transformers/src/transformers/models/llama/modeling_llama.py
+@@ -575,6 +575,8 @@ class LlamaModel(LlamaPreTrainedModel):
+         self.fast_v_image_token_length = config.fast_v_image_token_length
+         self.fast_v_attention_rank = config.fast_v_attention_rank
+         self.fast_v_agg_layer = config.fast_v_agg_layer
++        self.fast_v_selection_mode = getattr(config, "fast_v_selection_mode", "attention")
++        self.fast_v_random_seed = getattr(config, "fast_v_random_seed", 0)
+     
+     def reset_fastv(self):
+         self.use_fast_v = self.config.use_fast_v
+@@ -582,6 +584,8 @@ class LlamaModel(LlamaPreTrainedModel):
+         self.fast_v_image_token_length = self.config.fast_v_image_token_length
+         self.fast_v_attention_rank = self.config.fast_v_attention_rank
+         self.fast_v_agg_layer = self.config.fast_v_agg_layer
++        self.fast_v_selection_mode = getattr(self.config, "fast_v_selection_mode", "attention")
++        self.fast_v_random_seed = getattr(self.config, "fast_v_random_seed", 0)
+ 
+ 
+ 
+@@ -728,15 +732,27 @@ class LlamaModel(LlamaPreTrainedModel):
+                         
+                     elif idx==AGG_LAYER:
+                         if idx!=0:
+-                            last_layer_attention = layer_outputs[1]
+-                            # compute average attention over different head
+-                            last_layer_attention_avg = torch.mean(last_layer_attention, dim=1)[0]
+-                            # generate new attention mask based on the average attention, sample the top ATTENTION_RANK tokens with highest attention
+-                            last_layer_attention_avg_last_tok = last_layer_attention_avg[-1]
+-                            # get the attention in image token
+-                            last_layer_attention_avg_last_tok_image = last_layer_attention_avg_last_tok[SYS_LENGTH:SYS_LENGTH+IMAGE_TOKEN_LENGTH]
+-                            # get the indexs of the top ATTENTION_RANK tokens
+-                            top_attention_rank_index = last_layer_attention_avg_last_tok_image.topk(ATTENTION_RANK).indices + SYS_LENGTH
++                            if self.fast_v_selection_mode == "random":
++                                generator = torch.Generator(device=hidden_states.device)
++                                generator.manual_seed(int(self.fast_v_random_seed))
++                                top_attention_rank_index = (
++                                    torch.randperm(
++                                        IMAGE_TOKEN_LENGTH,
++                                        generator=generator,
++                                        device=hidden_states.device,
++                                    )[:ATTENTION_RANK]
++                                    + SYS_LENGTH
++                                )
++                            else:
++                                last_layer_attention = layer_outputs[1]
++                                # compute average attention over different head
++                                last_layer_attention_avg = torch.mean(last_layer_attention, dim=1)[0]
++                                # generate new attention mask based on the average attention, sample the top ATTENTION_RANK tokens with highest attention
++                                last_layer_attention_avg_last_tok = last_layer_attention_avg[-1]
++                                # get the attention in image token
++                                last_layer_attention_avg_last_tok_image = last_layer_attention_avg_last_tok[SYS_LENGTH:SYS_LENGTH+IMAGE_TOKEN_LENGTH]
++                                # get the indexs of the top ATTENTION_RANK tokens
++                                top_attention_rank_index = last_layer_attention_avg_last_tok_image.topk(ATTENTION_RANK).indices + SYS_LENGTH
+                             # generate new attention mask
+                             gen_attention_mask = torch.ones((batch_size, seq_length_with_past), dtype=torch.bool, device=inputs_embeds.device)
+                             gen_attention_mask[:,SYS_LENGTH:SYS_LENGTH+IMAGE_TOKEN_LENGTH] = False

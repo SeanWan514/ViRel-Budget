@@ -1,0 +1,8 @@
+{
+  "label_rows": 3600,
+  "method": "random",
+  "sample_count": 900,
+  "source_config": "configs/prospective900_llava15_7b_random.json",
+  "source_records": "results/prospective900_llava15_7b_random/records_with_measured_energy.jsonl",
+  "strict_target": "original-answer fidelity AND dense intervention-answer trajectory fidelity"
+}

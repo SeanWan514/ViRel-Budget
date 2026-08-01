@@ -1,0 +1,87 @@
+{
+  "run_name": "phase_a_current_llava15_13b_scope",
+  "seed": 13,
+  "backend": {
+    "name": "scope_llava",
+    "model_path": "/workspace/models/llava-v1.5-13b",
+    "scope_repo": "/workspace/virel_external/SCOPE",
+    "device": "cuda",
+    "max_new_tokens": 24,
+    "conv_mode": "llava_v1",
+    "image_aspect_ratio": "pad",
+    "load_8bit": false,
+    "load_4bit": false
+  },
+  "dataset": {
+    "name": "development_1200",
+    "path": "data/paper_1200/samples.jsonl",
+    "validation_split": "validation",
+    "test_split": "test",
+    "limit": null
+  },
+  "interventions": [
+    {
+      "name": "gray",
+      "type": "gray"
+    },
+    {
+      "name": "blur",
+      "type": "blur",
+      "radius": 8.0
+    },
+    {
+      "name": "irrelevant",
+      "type": "irrelevant",
+      "pool": "data/paper_1200/irrelevant"
+    },
+    {
+      "name": "counterfactual",
+      "type": "counterfactual",
+      "applies_to": [
+        "visual_counterfact_color",
+        "visual_counterfact_size"
+      ]
+    }
+  ],
+  "pruning": {
+    "methods": [
+      "scope"
+    ],
+    "budget_schedule": [
+      64,
+      128,
+      256,
+      432
+    ],
+    "dense_budget": "full"
+  },
+  "policy": {
+    "tau_grid": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "rho_grid": [
+      0.5,
+      0.7,
+      0.9
+    ],
+    "dense_vem_min": 0.1,
+    "prefer_rr": true
+  },
+  "cost": {
+    "dense_token_count": null,
+    "base_ms": 0.0,
+    "per_token_ms": 1.0,
+    "energy_joule_per_ms": 0.004,
+    "dollar_per_1k_ms": 2e-05
+  },
+  "analysis": {
+    "bootstrap_iterations": 1000
+  },
+  "outputs": {
+    "dir": "results/phase_a_current_llava15_13b_scope"
+  },
+  "reuse_existing_interventions": true
+}

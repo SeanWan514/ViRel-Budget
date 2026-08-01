@@ -1,0 +1,31 @@
+{
+  "status": "documented replication runtime amendments; frozen samples, controllers, actions, and gate criteria unchanged",
+  "base_protocol_sha256": "7a403a5e2ca56f904fa38ca759f4973955cdb34ffea1d1ed7d426c0943879bb5",
+  "amendments": [
+    {
+      "path": "scripts/run_frozen_controller.py",
+      "sha256": "cb65f5d4ee80a7e712c89e7e2b6f15f20cc09ea8a084497c9ce8f1fd9491dd82",
+      "classification": "pre-replication SCOPE warm-up ordering repair",
+      "effect": "For SCOPE batched execution, the instrumentation-only warm-up is forced to dense so the official backend's dense-first invariant is satisfied. Frozen query actions and controller outputs are unchanged."
+    },
+    {
+      "path": "scripts/run_replication_210x3_queue.sh",
+      "sha256": "feda9847c8317b5e3b13c8c31821669af434db9d8cc90162d84eee36a92b0ff1",
+      "classification": "restart-safety repair",
+      "effect": "Creates the attempt directory before redirection and retries only when a failed attempt made durable progress. The initial zero-progress launch executed no inference."
+    }
+  ],
+  "preserved_failures": [
+    {
+      "path": "results/replication210x3_smoke/failed_attempts/13b_scope_initial/combined.log",
+      "sha256": "d2b5d965e9cf42f95a01bbfc0bbfec8a94aad6ae026f889fa9e297c51598165d",
+      "effect": "The failed smoke attempt is retained and included as Tier 2 evidence in whole-program footprint accounting."
+    }
+  ],
+  "execution_outcome": {
+    "inference_retries": 0,
+    "completed_cells": 24,
+    "completed_actions": 5040,
+    "single_invocation_per_action": true
+  }
+}

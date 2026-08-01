@@ -1,0 +1,67 @@
+{
+  "status": "protocol and method-specific coefficients frozen before prospective evaluation",
+  "version": "virel-controller-1.0",
+  "primary_policy": {
+    "action_mode": "direct_single_action",
+    "actions": [64, 128, 256, 432, "dense"],
+    "controller_inputs": [
+      "question word count",
+      "question character count",
+      "option count",
+      "multiple-choice indicator",
+      "dataset/task identifier",
+      "predeclared question-keyword indicators"
+    ],
+    "forbidden_inputs": [
+      "gold answer",
+      "dense answer or correctness",
+      "dense reliance",
+      "intervention output",
+      "unexecuted-budget output",
+      "reference-safe label",
+      "minimum observed safe budget"
+    ],
+    "model": "four independent L2-regularized logistic regressions, one per pruned budget",
+    "risk_limit": 0.05,
+    "risk_calibration": "one-sided 95% Wilson upper confidence bound on full-population unsafe acceptance must not exceed 0.05",
+    "selection": "choose the smallest budget whose predicted reference-safety probability exceeds the development-calibrated threshold; otherwise execute dense",
+    "execution_limit": "exactly one VLM inference per query",
+    "fallback": "no post-hoc dense fallback after returning a pruned answer",
+    "method_specific": true
+  },
+  "secondary_non_deployment_analysis": {
+    "confidence_probe": "ablation only",
+    "reason": "a 64-token probe followed by dense fallback is not energy-positive at the observed conservative acceptance rates"
+  },
+  "development_data": {
+    "pool": "existing 1200 cases",
+    "role": "development and calibration only",
+    "grouping": "connected components of identical image content and exact normalized non-template questions; repeated benchmark templates are retained as task structure",
+    "cross_validation": "five-fold group-aware",
+    "fitted_artifacts": {
+      "fastv": {
+        "path": "results/frozen_controllers/fastv_controller.json",
+        "sha256": "841e93f116207314c7238c719a899977a35e2c5c68c750f5ef291e6ae0667805"
+      },
+      "scope": {
+        "path": "results/frozen_controllers/scope_controller.json",
+        "sha256": "49adc30ce89185c0b118cbc6002fa17b6830539b55e2522959dcbae88e82b519"
+      }
+    }
+  },
+  "prospective_test": {
+    "pool": "future group-isolated added cases",
+    "label_timing": "labels hidden until after every action is executed",
+    "required_accounting": "one selected action per query plus controller CPU time; evaluator interventions reported separately"
+  },
+  "primary_metrics": [
+    "unconditional task accuracy",
+    "dense-behavior safety rate",
+    "unsafe acceptance rate",
+    "dense avoidance rate",
+    "joules per query",
+    "latency per query",
+    "supported correct answers per kWh",
+    "coverage of dense-correct intervention-reliant population"
+  ]
+}

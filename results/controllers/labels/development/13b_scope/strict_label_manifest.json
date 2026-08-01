@@ -1,0 +1,8 @@
+{
+  "label_rows": 4800,
+  "method": "scope",
+  "sample_count": 1200,
+  "source_config": "configs/phase_a_current_llava15_13b_scope.json",
+  "source_records": "results/phase_a_current_llava15_13b_scope/records_with_measured_energy.jsonl",
+  "strict_target": "original-answer fidelity AND dense intervention-answer trajectory fidelity"
+}

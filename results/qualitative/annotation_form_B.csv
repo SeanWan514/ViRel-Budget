@@ -1,0 +1,84 @@
+blind_id,dataset,question,options,intervention_family,original_image,intervened_image,eligible_intervention_yes_no_uncertain,original_answer,intervened_answer,artifact_present_yes_no_uncertain,artifact_reason,confidence_1_to_5,notes
+QA034,pope_random,Is there a backpack in the image?,"[""yes"", ""no""]",constant_gray,images/QA034_original.jpg,images/QA034_intervened.png,,,,,,,
+QA009,visual_counterfact_color,What color is the pill bottle in the image?,"[""orange"", ""purple""]",counterfactual,images/QA009_original.jpg,images/QA009_intervened.png,,,,,,,
+QA007,pope_random,Is there a backpack in the image?,"[""yes"", ""no""]",constant_gray,images/QA007_original.jpg,images/QA007_intervened.png,,,,,,,
+QA033,pope_random,Is there a remote in the image?,"[""yes"", ""no""]",blur,images/QA033_original.jpg,images/QA033_intervened.png,,,,,,,
+QA041,pope_adversarial,Is there a handbag in the image?,"[""yes"", ""no""]",irrelevant,images/QA041_original.jpg,images/QA041_intervened.png,,,,,,,
+QA011,pope_random,Is there a person in the image?,"[""yes"", ""no""]",irrelevant,images/QA011_original.jpg,images/QA011_intervened.png,,,,,,,
+QA039,visual_counterfact_color,What color is the beacon in the image?,"[""red"", ""brown""]",counterfactual,images/QA039_original.jpg,images/QA039_intervened.png,,,,,,,
+QA004,pope_popular,Is there a bowl in the image?,"[""yes"", ""no""]",constant_gray,images/QA004_original.jpg,images/QA004_intervened.png,,,,,,,
+QA040,pope_adversarial,Is there a truck in the image?,"[""yes"", ""no""]",constant_gray,images/QA040_original.jpg,images/QA040_intervened.png,,,,,,,
+QA023,pope_adversarial,Is there a person in the image?,"[""yes"", ""no""]",irrelevant,images/QA023_original.jpg,images/QA023_intervened.png,,,,,,,
+QA001,mmstar,"What is correct Python code to generate the content of the image?
+Options: A: def myfunc():\n  x = 300\n  def myinnerfunc():\n    print(x)\n  myinnerfunc()\n\nmyfunc(), B: thisdict = {\n  ""brand"": ""Ford"",\n  ""model"": ""Mustang"",\n  ""year"": 1964\n}\n\nprint(len(thisdict)), C: x = min(5, 10, 25)\ny = max(5, 10, 25)\n\nprint(x)\nprint(y), D: class Person:\n  def __init__(self, name, age):\n    self.name = name\n    self.age = age\n\np1 = Person(""John"", 36)\n\nprint(p1.name)\nprint(p1.age)","[""def myfunc():\\n x = 300\\n def myinnerfunc():\\n print(x)\\n myinnerfunc()\\n\\nmyfunc()"", ""thisdict = {\\n \""brand\"": \""Ford\"",\\n \""model\"": \""Mustang\"",\\n \""year\"": 1964\\n}\\n\\nprint(len(thisdict))"", ""x = min(5, 10, 25)\\ny = max(5, 10, 25)\\n\\nprint(x)\\nprint(y)"", ""class Person:\\n def __init__(self, name, age):\\n self.name = name\\n self.age = age\\n\\np1 = Person(\""John\"", 36)\\n\\nprint(p1.name)\\nprint(p1.age)""]",constant_gray,images/QA001_original.jpg,images/QA001_intervened.png,,,,,,,
+QA012,pope_adversarial,Is there a person in the image?,"[""yes"", ""no""]",blur,images/QA012_original.jpg,images/QA012_intervened.png,,,,,,,
+QA030,visual_counterfact_size,What is the main object in the image?,"[""jackfruit"", ""eraser""]",counterfactual,images/QA030_original.jpg,images/QA030_intervened.png,,,,,,,
+QA032,visual_counterfact_size,What is the main object in the image?,"[""goldfinch"", ""matchstick""]",counterfactual,images/QA032_original.jpg,images/QA032_intervened.png,,,,,,,
+QA044,pope_popular,Is there a person in the image?,"[""yes"", ""no""]",irrelevant,images/QA044_original.jpg,images/QA044_intervened.png,,,,,,,
+QA036,pope_adversarial,Is there a person in the image?,"[""yes"", ""no""]",blur,images/QA036_original.jpg,images/QA036_intervened.png,,,,,,,
+QA022,visual_counterfact_color,What color is the raven in the image?,"[""black"", ""purple""]",counterfactual,images/QA022_original.jpg,images/QA022_intervened.png,,,,,,,
+QA038,pope_random,Is there a backpack in the image?,"[""yes"", ""no""]",irrelevant,images/QA038_original.jpg,images/QA038_intervened.png,,,,,,,
+QA035,visual_counterfact_color,What color is the skillet in the image?,"[""black"", ""orange""]",counterfactual,images/QA035_original.jpg,images/QA035_intervened.png,,,,,,,
+QA026,mmstar,"What's the profession of the people in this picture?
+Options: A: baker, B: butcher, C: carpenter, D: designer","[""baker"", ""butcher"", ""carpenter"", ""designer""]",irrelevant,images/QA026_original.jpg,images/QA026_intervened.png,,,,,,,
+QA024,pope_popular,Is there a person in the image?,"[""yes"", ""no""]",blur,images/QA024_original.jpg,images/QA024_intervened.png,,,,,,,
+QA048,mmstar,"Which is also known as the wind pipe?
+Options: A: e, B: b, C: a, D: c","[""e"", ""b"", ""a"", ""c""]",blur,images/QA048_original.jpg,images/QA048_intervened.png,,,,,,,
+QA045,mmstar,"Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.
+Question: What number is shown?
+Choices:
+(A) 7909
+(B) 9999
+(C) 9099
+(D) 9079","[""7909"", ""9999"", ""9099"", ""9079""]",blur,images/QA045_original.jpg,images/QA045_intervened.png,,,,,,,
+QA021,mmstar,"What is the dominant color palette of the image?
+Options: A: Red and black, B: Green and brown, C: White and pink, D: Blue and gray","[""Red and black"", ""Green and brown"", ""White and pink"", ""Blue and gray""]",blur,images/QA021_original.jpg,images/QA021_intervened.png,,,,,,,
+QA025,visual_counterfact_size,What is the main object in the image?,"[""pool table"", ""mackerel""]",counterfactual,images/QA025_original.jpg,images/QA025_intervened.png,,,,,,,
+QA028,mmstar,"How many tables are there in the room?
+Options: A: Four tables, B: Two tables, C: Three tables, D: One table","[""Four tables"", ""Two tables"", ""Three tables"", ""One table""]",constant_gray,images/QA028_original.jpg,images/QA028_intervened.png,,,,,,,
+QA031,mmstar,"Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.
+Question: As shown in the figure, in Rt△ABC, ∠C = 90.0, AC = 4.0, AB = 5.0, then the value of sinB is ()
+Choices:
+(A) \frac{2}{3}
+(B) \frac{3}{5}
+(C) \frac{3}{4}
+(D) \frac{4}{5}","[""\\frac{2}{3}"", ""\\frac{3}{5}"", ""\\frac{3}{4}"", ""\\frac{4}{5}""]",constant_gray,images/QA031_original.jpg,images/QA031_intervened.png,,,,,,,
+QA020,pope_popular,Is there a person in the image?,"[""yes"", ""no""]",irrelevant,images/QA020_original.jpg,images/QA020_intervened.png,,,,,,,
+QA016,pope_random,Is there a backpack in the image?,"[""yes"", ""no""]",constant_gray,images/QA016_original.jpg,images/QA016_intervened.png,,,,,,,
+QA013,pope_random,Is there a truck in the image?,"[""yes"", ""no""]",constant_gray,images/QA013_original.jpg,images/QA013_intervened.png,,,,,,,
+QA047,mmstar,"what python code is gonna generate the result as shown in the image?
+Options: A: for x in ""banana"":
+print(x), B: fruits = [""apple"", ""banana"", ""cherry""]
+for x in fruits:
+print(x) 
+if x == ""banana"":
+break, C: fruits = [""apple"", ""banana"", ""cherry""]
+for x in fruits:
+if x == ""banana"":
+break
+print(x), D: fruits = [""apple"", ""banana"", ""cherry""]
+for x in fruits:
+if x == ""banana"":
+continue
+print(x)","[""for x in \""banana\"": print(x)"", ""fruits = [\""apple\"", \""banana\"", \""cherry\""] for x in fruits: print(x) if x == \""banana\"": break"", ""fruits = [\""apple\"", \""banana\"", \""cherry\""] for x in fruits: if x == \""banana\"": break print(x)"", ""fruits = [\""apple\"", \""banana\"", \""cherry\""] for x in fruits: if x == \""banana\"": continue print(x)""]",irrelevant,images/QA047_original.jpg,images/QA047_intervened.png,,,,,,,
+QA005,visual_counterfact_color,What color is the yurt in the image?,"[""white"", ""orange""]",counterfactual,images/QA005_original.jpg,images/QA005_intervened.png,,,,,,,
+QA014,pope_adversarial,Is there a chair in the image?,"[""yes"", ""no""]",irrelevant,images/QA014_original.jpg,images/QA014_intervened.png,,,,,,,
+QA018,pope_random,Is there a chair in the image?,"[""yes"", ""no""]",blur,images/QA018_original.jpg,images/QA018_intervened.png,,,,,,,
+QA043,pope_adversarial,Is there a person in the image?,"[""yes"", ""no""]",constant_gray,images/QA043_original.jpg,images/QA043_intervened.png,,,,,,,
+QA042,pope_popular,Is there a truck in the image?,"[""yes"", ""no""]",blur,images/QA042_original.jpg,images/QA042_intervened.png,,,,,,,
+QA003,mmstar,"Which direction is the sun shining from?
+Options: A: Right, B: Left, C: Up, D: Down","[""Right"", ""Left"", ""Up"", ""Down""]",blur,images/QA003_original.jpg,images/QA003_intervened.png,,,,,,,
+QA006,pope_popular,Is there a tv in the image?,"[""yes"", ""no""]",blur,images/QA006_original.jpg,images/QA006_intervened.png,,,,,,,
+QA015,pope_random,Is there a person in the image?,"[""yes"", ""no""]",blur,images/QA015_original.jpg,images/QA015_intervened.png,,,,,,,
+QA002,pope_adversarial,Is there a bottle in the image?,"[""yes"", ""no""]",irrelevant,images/QA002_original.jpg,images/QA002_intervened.png,,,,,,,
+QA008,mmstar,"In this comparison picture, are the left and right modules the same shape?
+Options: A: same, B: Not the same, C: Can't judge, D: nan","[""same"", ""Not the same"", ""Can't judge"", ""nan""]",irrelevant,images/QA008_original.jpg,images/QA008_intervened.png,,,,,,,
+QA019,pope_adversarial,Is there a donut in the image?,"[""yes"", ""no""]",constant_gray,images/QA019_original.jpg,images/QA019_intervened.png,,,,,,,
+QA046,mmstar,"What is the main focus of this image?
+Options: A: The grassy hill, B: The sculpture, C: The fence, D: The building","[""The grassy hill"", ""The sculpture"", ""The fence"", ""The building""]",constant_gray,images/QA046_original.jpg,images/QA046_intervened.png,,,,,,,
+QA010,visual_counterfact_color,What color is the lifeboat in the image?,"[""orange"", ""pink""]",counterfactual,images/QA010_original.jpg,images/QA010_intervened.png,,,,,,,
+QA027,visual_counterfact_size,What is the main object in the image?,"[""RV"", ""bittern""]",counterfactual,images/QA027_original.jpg,images/QA027_intervened.png,,,,,,,
+QA017,pope_popular,Is there a person in the image?,"[""yes"", ""no""]",irrelevant,images/QA017_original.jpg,images/QA017_intervened.png,,,,,,,
+QA037,mmstar,"Graph 1 shows the number of unemployed (in thousands) over a five-month period, organized by level of education completed. <image 1> The difference between the number of unemployed high school graduates and the number of unemployed workers without a high school diploma was smallest in ______.
+Options: A: June, B: July, C: August, D: September","[""June"", ""July"", ""August"", ""September""]",constant_gray,images/QA037_original.jpg,images/QA037_intervened.png,,,,,,,
+QA029,visual_counterfact_size,What is the main object in the image?,"[""ambulance"", ""cheese""]",counterfactual,images/QA029_original.jpg,images/QA029_intervened.png,,,,,,,

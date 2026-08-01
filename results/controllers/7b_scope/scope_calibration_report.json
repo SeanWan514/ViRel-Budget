@@ -1,0 +1,18 @@
+{
+  "calibration_constraint": "one-sided 95% Wilson upper confidence bound must not exceed risk_limit",
+  "calibration_population": 1200,
+  "dense_avoidance_rate": 0.1975,
+  "fold_count": 5,
+  "mean_selected_visual_tokens": 546.8266666666667,
+  "risk_definition": "unsafe selected pruned action / all development queries",
+  "risk_limit": 0.05,
+  "selected_action_distribution": {
+    "256": 5,
+    "432": 232,
+    "dense": 963
+  },
+  "threshold": 0.9580963596067285,
+  "unsafe_acceptance_rate_full": 0.005833333333333334,
+  "unsafe_acceptance_rate_full_one_sided_95pct_upper": 0.010724083020623285,
+  "unsafe_acceptances": 7
+}

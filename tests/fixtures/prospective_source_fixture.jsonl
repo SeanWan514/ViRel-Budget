@@ -1,0 +1,1 @@
+{"answer":"yes","dataset":"fixture_dataset","image_path":"fake_prospective_image.bin","metadata":{"private_note":"must remain hidden"},"options":["yes","no"],"question":"Is this the unique prospective manifest isolation fixture?","sample_id":"prospective_fixture_001","split":"test"}

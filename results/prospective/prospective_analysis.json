@@ -1,0 +1,294 @@
+{
+  "claim_rules": {
+    "deployable_green_controller": "Requires prospective 95% unsafe-acceptance upper bound <=5% and positive lower 95% bootstrap bound for measured GPU energy reduction versus dense.",
+    "offline_audit": "Use when prospective deployment control is unsafe or not energy-efficient, while fixed-budget/oracle results still characterize attainable compression.",
+    "risk_efficiency_frontier": "Use when reliability or efficiency benefits are operating-point dependent and no single controller dominates dense across all model/method cells."
+  },
+  "controller_results": [
+    {
+      "complete_inference_block_gpu_energy_joule_per_query": 39.34318811032906,
+      "correct_answers_per_kwh": 61561.67236757078,
+      "dense_avoidance_rate": 0.6344444444444445,
+      "energy_reduction_bootstrap_95pct_ci": [
+        -0.04355990289963052,
+        0.05685358304277244
+      ],
+      "energy_reduction_vs_dense": 0.005805018299503861,
+      "execution_resumed_from_count": 0,
+      "mean_call_window_gpu_energy_joule": 37.23095737742451,
+      "mean_controller_cpu_latency_ms": 0.021643547548188105,
+      "mean_dense_call_window_gpu_energy_joule": 37.44834570955462,
+      "mean_dense_latency_ms": 127.33335839377509,
+      "mean_model_latency_ms": 114.09270668195353,
+      "mean_selected_visual_tokens": 484.44444444444446,
+      "method": "fastv",
+      "model": "7b",
+      "n": 900,
+      "prospective_risk_limit_met_95pct_upper": true,
+      "prospective_risk_limit_met_point_estimate": true,
+      "selected_budget_distribution": {
+        "256": 1,
+        "432": 570,
+        "dense": 329
+      },
+      "supported_correct_95pct_ci": [
+        0.47183026251613647,
+        0.5370208472907075
+      ],
+      "supported_correct_answers_per_kwh": 48776.613010256784,
+      "supported_correct_rate_full": 0.5044444444444445,
+      "token_reduction_vs_dense": 0.15895061728395055,
+      "unconditional_accuracy": 0.6366666666666667,
+      "unconditional_accuracy_95pct_ci": [
+        0.6047251567656826,
+        0.6674464697947693
+      ],
+      "unsafe_acceptance_95pct_ci": [
+        0.010972044794827789,
+        0.028682541162602194
+      ],
+      "unsafe_acceptance_count": 16,
+      "unsafe_acceptance_rate_full": 0.017777777777777778
+    },
+    {
+      "complete_inference_block_gpu_energy_joule_per_query": null,
+      "correct_answers_per_kwh": 70332.02873683117,
+      "dense_avoidance_rate": 0.3433333333333333,
+      "energy_reduction_bootstrap_95pct_ci": [
+        -0.012659344154136276,
+        0.17891563671829347
+      ],
+      "energy_reduction_vs_dense": 0.07206257477573819,
+      "execution_resumed_from_count": 80,
+      "mean_call_window_gpu_energy_joule": 32.815774568882254,
+      "mean_controller_cpu_latency_ms": 0.031540395898951426,
+      "mean_dense_call_window_gpu_energy_joule": 35.364210642707306,
+      "mean_dense_latency_ms": 132.01408704121908,
+      "mean_model_latency_ms": 119.9904530743758,
+      "mean_selected_visual_tokens": 487.4488888888889,
+      "method": "scope",
+      "model": "7b",
+      "n": 900,
+      "prospective_risk_limit_met_95pct_upper": true,
+      "prospective_risk_limit_met_point_estimate": true,
+      "selected_budget_distribution": {
+        "256": 200,
+        "432": 109,
+        "dense": 591
+      },
+      "supported_correct_95pct_ci": [
+        0.4751520736337951,
+        0.5403373685281818
+      ],
+      "supported_correct_answers_per_kwh": 55704.91704112971,
+      "supported_correct_rate_full": 0.5077777777777778,
+      "token_reduction_vs_dense": 0.15373456790123452,
+      "unconditional_accuracy": 0.6411111111111111,
+      "unconditional_accuracy_95pct_ci": [
+        0.6092341243278153,
+        0.6717886120394804
+      ],
+      "unsafe_acceptance_95pct_ci": [
+        0.01012584319543478,
+        0.027315965310284206
+      ],
+      "unsafe_acceptance_count": 15,
+      "unsafe_acceptance_rate_full": 0.016666666666666666
+    },
+    {
+      "complete_inference_block_gpu_energy_joule_per_query": 40.0334913613982,
+      "correct_answers_per_kwh": 61420.32578166577,
+      "dense_avoidance_rate": 0.5633333333333334,
+      "energy_reduction_bootstrap_95pct_ci": [
+        -0.03425960317578047,
+        0.07472964327369735
+      ],
+      "energy_reduction_vs_dense": 0.019168641774021333,
+      "execution_resumed_from_count": 0,
+      "mean_call_window_gpu_energy_joule": 36.73051178561846,
+      "mean_controller_cpu_latency_ms": 0.024529674814807043,
+      "mean_dense_call_window_gpu_energy_joule": 37.44834570955462,
+      "mean_dense_latency_ms": 127.33335839377509,
+      "mean_model_latency_ms": 119.00149728275008,
+      "mean_selected_visual_tokens": 436.2133333333333,
+      "method": "random",
+      "model": "7b",
+      "n": 900,
+      "prospective_risk_limit_met_95pct_upper": true,
+      "prospective_risk_limit_met_point_estimate": true,
+      "selected_budget_distribution": {
+        "256": 300,
+        "432": 207,
+        "dense": 393
+      },
+      "supported_correct_95pct_ci": [
+        0.4585574450624173,
+        0.5237403353238946
+      ],
+      "supported_correct_answers_per_kwh": 48134.36878634091,
+      "supported_correct_rate_full": 0.4911111111111111,
+      "token_reduction_vs_dense": 0.24268518518518523,
+      "unconditional_accuracy": 0.6266666666666667,
+      "unconditional_accuracy_95pct_ci": [
+        0.5945904761689035,
+        0.6576661533261495
+      ],
+      "unsafe_acceptance_95pct_ci": [
+        0.024370462038325047,
+        0.04847578569476978
+      ],
+      "unsafe_acceptance_count": 31,
+      "unsafe_acceptance_rate_full": 0.034444444444444444
+    },
+    {
+      "complete_inference_block_gpu_energy_joule_per_query": 72.0334009868597,
+      "correct_answers_per_kwh": 39158.26028935309,
+      "dense_avoidance_rate": 0.7755555555555556,
+      "energy_reduction_bootstrap_95pct_ci": [
+        0.003048960591401473,
+        0.057388960945262135
+      ],
+      "energy_reduction_vs_dense": 0.029578461106523957,
+      "execution_resumed_from_count": 0,
+      "mean_call_window_gpu_energy_joule": 66.7036783733262,
+      "mean_controller_cpu_latency_ms": 0.013576058877838982,
+      "mean_dense_call_window_gpu_energy_joule": 68.73680735630118,
+      "mean_dense_latency_ms": 181.65765841801962,
+      "mean_model_latency_ms": 176.21875427042445,
+      "mean_selected_visual_tokens": 432.05333333333334,
+      "method": "fastv",
+      "model": "13b",
+      "n": 900,
+      "prospective_risk_limit_met_95pct_upper": true,
+      "prospective_risk_limit_met_point_estimate": true,
+      "selected_budget_distribution": {
+        "256": 165,
+        "432": 533,
+        "dense": 202
+      },
+      "supported_correct_95pct_ci": [
+        0.5541930401009306,
+        0.6184036011325266
+      ],
+      "supported_correct_answers_per_kwh": 31662.42179598535,
+      "supported_correct_rate_full": 0.5866666666666667,
+      "token_reduction_vs_dense": 0.24990740740740736,
+      "unconditional_accuracy": 0.7255555555555555,
+      "unconditional_accuracy_95pct_ci": [
+        0.6954897274490893,
+        0.7537040952482418
+      ],
+      "unsafe_acceptance_95pct_ci": [
+        0.017088443452951428,
+        0.038055584666455484
+      ],
+      "unsafe_acceptance_count": 23,
+      "unsafe_acceptance_rate_full": 0.025555555555555557
+    },
+    {
+      "complete_inference_block_gpu_energy_joule_per_query": null,
+      "correct_answers_per_kwh": 46900.205294478874,
+      "dense_avoidance_rate": 0.5,
+      "energy_reduction_bootstrap_95pct_ci": [
+        0.09322751627370407,
+        0.18168255719011261
+      ],
+      "energy_reduction_vs_dense": 0.13302538405067688,
+      "execution_resumed_from_count": 750,
+      "mean_call_window_gpu_energy_joule": 55.43685755051639,
+      "mean_controller_cpu_latency_ms": 0.01979098551803165,
+      "mean_dense_call_window_gpu_energy_joule": 63.942884290578604,
+      "mean_dense_latency_ms": 192.04138570361667,
+      "mean_model_latency_ms": 175.69679597392678,
+      "mean_selected_visual_tokens": 470.22222222222223,
+      "method": "scope",
+      "model": "13b",
+      "n": 900,
+      "prospective_risk_limit_met_95pct_upper": true,
+      "prospective_risk_limit_met_point_estimate": true,
+      "selected_budget_distribution": {
+        "128": 100,
+        "432": 350,
+        "dense": 450
+      },
+      "supported_correct_95pct_ci": [
+        0.5430105720756586,
+        0.6074582946406888
+      ],
+      "supported_correct_answers_per_kwh": 37375.85591160009,
+      "supported_correct_rate_full": 0.5755555555555556,
+      "token_reduction_vs_dense": 0.183641975308642,
+      "unconditional_accuracy": 0.7222222222222222,
+      "unconditional_accuracy_95pct_ci": [
+        0.6920622538989134,
+        0.7504932364432846
+      ],
+      "unsafe_acceptance_95pct_ci": [
+        0.0197896419991081,
+        0.04199271847543178
+      ],
+      "unsafe_acceptance_count": 26,
+      "unsafe_acceptance_rate_full": 0.028888888888888888
+    },
+    {
+      "complete_inference_block_gpu_energy_joule_per_query": 83.1830430959357,
+      "correct_answers_per_kwh": 38352.180568073316,
+      "dense_avoidance_rate": 0.5177777777777778,
+      "energy_reduction_bootstrap_95pct_ci": [
+        -0.030668635864059768,
+        0.05231749213505377
+      ],
+      "energy_reduction_vs_dense": 0.012216967086730368,
+      "execution_resumed_from_count": 0,
+      "mean_call_window_gpu_energy_joule": 67.89705204318233,
+      "mean_controller_cpu_latency_ms": 0.013642598771386676,
+      "mean_dense_call_window_gpu_energy_joule": 68.73680735630118,
+      "mean_dense_latency_ms": 181.65765841801962,
+      "mean_model_latency_ms": 250.77776072339879,
+      "mean_selected_visual_tokens": 501.44,
+      "method": "random",
+      "model": "13b",
+      "n": 900,
+      "prospective_risk_limit_met_95pct_upper": true,
+      "prospective_risk_limit_met_point_estimate": true,
+      "selected_budget_distribution": {
+        "432": 466,
+        "dense": 434
+      },
+      "supported_correct_95pct_ci": [
+        0.5508365469320695,
+        0.6151217619462548
+      ],
+      "supported_correct_answers_per_kwh": 30929.177877478483,
+      "supported_correct_rate_full": 0.5833333333333334,
+      "token_reduction_vs_dense": 0.12944444444444447,
+      "unconditional_accuracy": 0.7233333333333334,
+      "unconditional_accuracy_95pct_ci": [
+        0.6932045213573925,
+        0.7515637464365166
+      ],
+      "unsafe_acceptance_95pct_ci": [
+        0.012687810635587127,
+        0.03139233022526484
+      ],
+      "unsafe_acceptance_count": 18,
+      "unsafe_acceptance_rate_full": 0.02
+    }
+  ],
+  "measurement_boundary": "Primary paired reductions use GPU call-window energy from 200-ms NVIDIA telemetry. Controller inference-block energy is also reported; CPU controller latency is reported separately. These are not full-platform or embodied-carbon measurements.",
+  "phase": "B_prospective_900_analysis",
+  "scope": {
+    "combined": 2100,
+    "development": 1200,
+    "methods": [
+      "fastv",
+      "scope",
+      "random"
+    ],
+    "models": [
+      "7b",
+      "13b"
+    ],
+    "prospective": 900
+  }
+}

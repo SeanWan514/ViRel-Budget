@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.venv/
+venv/
+.DS_Store
+*.log
+*.tmp
+*.swp
+
+# Large or licensed artifacts
+models/
+checkpoints/
+data/images/
+data/cache/
+results/**/hardware_monitor/
+results/**/codecarbon/
+
+# Private study material
+**/private_blind_mapping.csv
+**/secrets*
+.env*

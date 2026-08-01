@@ -1,0 +1,45 @@
+{
+  "artifact_type": "virel_final_experiment_closeout_integrity",
+  "checksums": {
+    "docs/FINAL_DATASET_SELECTION_PROTOCOL.md": "6bd41040725bd0e1810b1577e83cbd4139f25850492d5c68e14acb4eb2777199",
+    "docs/FINAL_EXPERIMENT_CLOSEOUT_REPORT.md": "fc0a75077e49870b49f5d0ff75b71f5726fa6f8345b0ed3b83675ffcae9b0cba",
+    "docs/FINAL_GREENMM_MEASUREMENT_PROTOCOL.md": "97f0d7f45d694defd9a71b54ea562cf434243fd18ce25696741587d0461e8037",
+    "results/final_greenmm_analysis/controller_resource_pareto.csv": "91c427192a649385ed645f51d1e5c82b0cdb6060c345e5eb912985dedc22c8e1",
+    "results/final_greenmm_analysis/dense_model_scale_pareto.csv": "a8846a0623cc771966b0605deaf529983966ef733d9e60397fe68aa5d711f9ce",
+    "results/final_greenmm_analysis/final_greenmm_analysis.json": "894c518aecb5e58cf04e6adf1526f5e6d4b542436ac96ffc118db799fb2d9a7e",
+    "results/final_greenmm_analysis/smolvlm500m_dense_audit.json": "6a0d9a30f7080e711f8449b1fa91003876c3c0af3196c7bfb88ccd7bc143c059",
+    "results/qualitative_annotation_48/annotation_form_A.csv": "c9167964e58ecd49f80a7d39886e49055961f4a162f1dd037adf0c12df66c721",
+    "results/qualitative_annotation_48/annotation_form_B.csv": "c12cd0351625542b2a947a7b17fe36f48bcbca6abc72dba666e7eb7bcf92fb9a",
+    "results/qualitative_annotation_48/manifest.json": "fe14c6dc2033e2f695bd53781e451cb170314cbe8df6ffaeb30c980f54d275e7",
+    "results/replication210x3_analysis/gate_r.json": "4c2db8f47fcb39abc2038048e781892c6b2c0e39e7a4925d3787df16136a6aaa",
+    "results/replication210x3_analysis/replication_aggregate_results.csv": "de976e0e9fb4fb95222185bfe0668953e1e4e6223b36762a9cdd094d6ccfe455",
+    "results/replication210x3_analysis/replication_dataset_provenance_breakdown.csv": "65af682c635a9eca26099854000925b05a1946410d560a52b3bc664bd015780b",
+    "results/replication210x3_analysis/replication_decisions.csv": "b8cbc99449312874dfa13fd047e2dbc1b334197ac83ca73588543091dea32b2a",
+    "results/replication210x3_analysis/replication_draw_results.csv": "7bea0d6e39b470af7532f32d012d9c6085c290565ac7d6be9a59565649e5b1a5",
+    "results/replication210x3_protocol.json": "7a403a5e2ca56f904fa38ca759f4973955cdb34ffea1d1ed7d426c0943879bb5",
+    "results/replication210x3_queue/final_audit.json": "da843db03d46315a665893480e9274dae1fd408655589ab43b34ec76f9e3e03d",
+    "results/replication210x3_runtime_amendments.json": "d798e6864c6d0d275acceb4f581b9472f8d58abe8167000027e445fe627cf3b5",
+    "results/whole_experiment_carbon/experiment_run_ledger.csv": "04174b00a0042f79736519086ce7687e2f75533be5826e04aadd9fadc8dd742e",
+    "results/whole_experiment_carbon/whole_experiment_carbon_summary.json": "c08d88d798b0a9ec980405c332865c42972e006392a0bc09c3f7a96a46253462"
+  },
+  "file_count": 20,
+  "scientific_scope": {
+    "development_queries": 1200,
+    "prospective_queries": 900,
+    "replication_actions": 5040,
+    "replication_cells": 24,
+    "replication_strong_green_cells": [
+      "7b/scope",
+      "13b/scope"
+    ],
+    "replication_unique_queries": 630
+  },
+  "status": "gpu experiments and automated analyses complete",
+  "verification": {
+    "authoritative_remote_tests_failed": 0,
+    "authoritative_remote_tests_passed": 29,
+    "human_qualitative_annotation_pending": true,
+    "protected_framework_files_unchanged": 31,
+    "replication_completion_audit_passed": true
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "auditable runtime amendments; frozen decisions and prospective data unchanged",
+  "base_contract_manifest": "results/frozen_experiment_contract_integrity.json",
+  "base_contract_status": "retained; not overwritten",
+  "prospective_manifest_sha256": "d70380504755296e15d6d4d7fa46ed31c11f01aaf33cbe67bc752f181db68b56",
+  "phase_a_gate_decision_sha256": "5e4b258d4cade4f449df618016b56ee1dd1261b26c329af0ac124ad3e2a239f0",
+  "invariants": [
+    "No controller feature, coefficient, risk threshold, or selected action was changed after its planned-actions checksum was written.",
+    "No prospective gold or intervention label was loaded before all six 900-query single-action executions completed.",
+    "Every prospective query has exactly one backend invocation.",
+    "All partial actions were appended durably and validated against the original frozen plan before resume.",
+    "The 31 protected pre-extension framework artifacts remain byte-for-byte unchanged."
+  ],
+  "amendments": [
+    {
+      "path": "configs/frozen_controller_protocol.json",
+      "base_sha256": "5629d54a6d050f98b2fa3eeaeda98152f89ed02d48f65105507cd674692a698d",
+      "runtime_sha256": "9c195d6a7c78202f7da18363d31d5e193c3a974255699eb407a99c65cf79a52b",
+      "classification": "pre-execution framework hardening",
+      "effect": "Records the final direct-single-action, method-specific, group-aware 5% Wilson-risk protocol. It does not contain prospective outcomes."
+    },
+    {
+      "path": "scripts/freeze_prospective_manifest.py",
+      "base_sha256": "2e521be57860aa914e64cca88d35a2e6f68a498abf440056ac42b6bfce235828",
+      "runtime_sha256": "6c24ff617e5608621358806cbeb2d0fed5ae4c11b9cb83cdb7a4b7e80096b572",
+      "classification": "pre-inference isolation hardening",
+      "effect": "Strengthens source grouping and distinguishes repeated benchmark templates. The emitted 900-case manifest was checksummed before inference."
+    },
+    {
+      "path": "scripts/fit_frozen_controller.py",
+      "base_sha256": "4d9d5b9c5bda08c06f995ad92e86e21ee0ba9949f1e96ea33b1a8ed01ae07609",
+      "runtime_sha256": "73d559fe3b97f3b47008b5aac70a834ad613a1ef62aa660afb2aa9a52cf24551",
+      "classification": "runtime import repair",
+      "effect": "Adds repository-root module resolution for direct script execution; numerical fitting code is unchanged."
+    },
+    {
+      "path": "scripts/run_frozen_controller.py",
+      "base_sha256": "64daa0be1f61a4df98da4a56ed21461255a528bdb7d725ce24774d673a3d1487",
+      "runtime_sha256": "d89d2babadaf2e78df89bdc08052f4424dd61dc3c4d1538aa10673f18af7fb9c",
+      "classification": "prospective execution safety repair",
+      "effect": "Adds durable resume, semantic frozen-plan validation, explicit attempt accounting, and SCOPE dense-before-pruned micro-batching. Planned budgets and probabilities remain byte-checksummed and unchanged."
+    },
+    {
+      "path": "scripts/analyze_greenmm_telemetry.py",
+      "base_sha256": "86e0d826ff1ab3afb1184f41d5325ee4c97f82c4f00ef5afda3dfde547e8ac36",
+      "runtime_sha256": "628a506a22dc992605ffd5206925cefa407f768d6c22ef994c5fa29a628f06ed",
+      "classification": "measurement-boundary repair",
+      "effect": "Separates final-attempt block energy from merged all-attempt call-window energy so resumed executions cannot be reported as one uninterrupted block."
+    }
+  ],
+  "claim_boundary": "These amendments improve execution integrity and accounting. They do not convert development evidence into prospective evidence or guarantee a positive Green result."
+}
