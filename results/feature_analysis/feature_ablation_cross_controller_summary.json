@@ -1,0 +1,38 @@
+{
+  "all_42_configurations_met_development_calibration_bound": true,
+  "baseline_reproduction_check": "passed_all_six_controllers",
+  "budget_specific_model_count": 24,
+  "coefficient_group_winner_counts": {
+    "task_source": 24
+  },
+  "interpretation": "Task/source indicators are the most consistently useful single feature family, but the effect is controller-dependent. Removing task indicators lowers dense avoidance in five of six controllers; 13B FastV is the exception. Keyword removal has smaller but nonzero effects and lowers coverage in five of six controllers. Question structure alone is useful for some FastV/Random cells but insufficient for 7B SCOPE. No universal single feature family drives every controller.",
+  "keyword_removal_dense_avoidance_change_percentage_points": {
+    "13b_fastv": -13.749999999999996,
+    "13b_random": -2.5833333333333375,
+    "13b_scope": -0.4166666666666652,
+    "7b_fastv": -0.5000000000000004,
+    "7b_random": -5.41666666666667,
+    "7b_scope": 7.33333333333333
+  },
+  "keyword_removal_reduced_coverage_count": 5,
+  "scope_note": "These are development-set, group-aware interpretability results. Each ablation was recalibrated to the same 5% Wilson-risk rule; they are not new prospective controllers.",
+  "single_group_winner_by_controller": {
+    "13b_fastv": "A1_structure_only",
+    "13b_random": "A2_task_only",
+    "13b_scope": "A2_task_only",
+    "7b_fastv": "A3_keywords_only",
+    "7b_random": "A2_task_only",
+    "7b_scope": "A2_task_only"
+  },
+  "task_only_is_best_single_group_count": 4,
+  "task_removal_dense_avoidance_change_percentage_points": {
+    "13b_fastv": 7.08333333333333,
+    "13b_random": -24.0,
+    "13b_scope": -29.499999999999993,
+    "7b_fastv": -32.083333333333336,
+    "7b_random": -29.75,
+    "7b_scope": -18.333333333333336
+  },
+  "task_removal_reduced_coverage_count": 5,
+  "task_source_has_largest_mean_absolute_standardized_coefficient_count": 24
+}

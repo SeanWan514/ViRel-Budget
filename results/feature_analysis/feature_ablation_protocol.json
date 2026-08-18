@@ -1,0 +1,65 @@
+{
+  "analysis": "Grouped feature-driver ablation for camera-ready interpretation",
+  "budgets": [64, 128, 256, 432],
+  "configurations": {
+    "A0_full": [
+      "question_structure",
+      "task_source",
+      "semantic_keywords"
+    ],
+    "A1_structure_only": [
+      "question_structure"
+    ],
+    "A2_task_only": [
+      "task_source"
+    ],
+    "A3_keywords_only": [
+      "semantic_keywords"
+    ],
+    "A4_full_minus_task": [
+      "question_structure",
+      "semantic_keywords"
+    ],
+    "A5_full_minus_keywords": [
+      "question_structure",
+      "task_source"
+    ],
+    "A6_intercept_only": []
+  },
+  "controllers": [
+    "7b_fastv",
+    "7b_scope",
+    "7b_random",
+    "13b_fastv",
+    "13b_scope",
+    "13b_random"
+  ],
+  "data_scope": {
+    "development_queries": 1200,
+    "prospective_labels_used": false,
+    "new_vlm_inference": false
+  },
+  "evaluation": {
+    "cross_validation": "Original deterministic five-fold group-aware assignments",
+    "models": "Four independent L2-regularized logistic regressions per controller and feature configuration",
+    "primary_metrics": [
+      "unsafe_acceptance_count",
+      "unsafe_acceptance_rate",
+      "one_sided_95pct_wilson_upper",
+      "risk_limit_met",
+      "dense_avoidance_rate",
+      "mean_selected_visual_tokens",
+      "selected_action_distribution"
+    ],
+    "risk_limit": 0.05,
+    "selection": "Smallest qualifying pruned budget, otherwise dense",
+    "threshold_calibration": "Maximize dense avoidance subject to one-sided 95% Wilson upper bound <= 0.05; break ties by lower mean selected tokens and then threshold"
+  },
+  "interpretation": {
+    "coverage_driver": "A group drives coverage when its removal materially lowers dense avoidance.",
+    "reliability_support": "A group supports reliability when its removal increases unsafe acceptance or the Wilson upper bound.",
+    "no_coefficient_only_claims": true,
+    "no_cross_controller_pooling_that_hides_failures": true
+  },
+  "status": "frozen_before_ablation_results"
+}

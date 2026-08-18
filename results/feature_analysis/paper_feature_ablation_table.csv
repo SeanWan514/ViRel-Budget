@@ -1,0 +1,8 @@
+configuration,7b_fastv_dense_avoidance_pct,7b_scope_dense_avoidance_pct,7b_random_dense_avoidance_pct,13b_fastv_dense_avoidance_pct,13b_scope_dense_avoidance_pct,13b_random_dense_avoidance_pct,maximum_wilson_upper_pct,all_risk_bounds_met
+A0_full,73.75,19.75,72.08,91.25,67.08,69.25,4.95,True
+A1_structure_only,66.17,0.0,33.83,100.0,16.67,34.5,4.95,True
+A2_task_only,66.83,27.33,66.67,77.33,50.0,66.67,4.95,True
+A3_keywords_only,82.08,10.83,42.25,99.0,22.75,45.0,4.95,True
+A4_full_minus_task,41.67,1.42,42.33,98.33,37.58,45.25,4.95,True
+A5_full_minus_keywords,73.25,27.08,66.67,77.5,66.67,66.67,4.95,True
+A6_intercept_only,50.42,0.0,16.83,100.0,16.83,33.58,4.76,True

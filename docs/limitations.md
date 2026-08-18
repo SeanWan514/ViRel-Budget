@@ -6,4 +6,4 @@
 4. Energy findings are implementation- and hardware-dependent. FastV did not show replicated energy savings despite high dense avoidance.
 5. The whole-program footprint excludes embodied emissions and unrecoverable idle/setup energy.
 6. The SmolVLM-500M comparison is dense-only and experienced a disclosed post-inference analysis failure; it supports a limited scale frontier, not full SLM generalization.
-7. The blinded qualitative package is prepared, but final two-annotator adjudication and agreement statistics must be completed before the strongest qualitative paper claims are made.
+7. The development-only feature analysis indicates substantial reliance on task/source identity and does not establish transfer to unseen task families.

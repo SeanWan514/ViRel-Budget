@@ -5,14 +5,25 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "virel-budget"
 version = "1.0.0"
-description = "Reliability-aware visual-token budgeting for greener multimodal inference."
+description = "Reliability-constrained visual-token budgeting for green vision-language inference."
 readme = "README.md"
 requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Weilin Wan"},
+    {name = "Shilin Ou"},
+    {name = "Luyao Zhang"},
+]
 dependencies = [
     "numpy>=1.24",
     "pandas>=2.0",
     "pillow>=10.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/SeanWan514/ViRel_Budget"
+Repository = "https://github.com/SeanWan514/ViRel_Budget"
+Issues = "https://github.com/SeanWan514/ViRel_Budget/issues"
 
 [project.optional-dependencies]
 model = [

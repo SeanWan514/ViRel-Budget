@@ -17,6 +17,7 @@ data/images/
 data/cache/
 results/**/hardware_monitor/
 results/**/codecarbon/
+results/qualitative/
 
 # Private study material
 **/private_blind_mapping.csv

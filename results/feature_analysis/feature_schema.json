@@ -1,0 +1,58 @@
+{
+  "feature_count": 17,
+  "feature_names": [
+    "question_word_count",
+    "question_character_count",
+    "option_count",
+    "multiple_choice",
+    "dataset=mmstar",
+    "dataset=pope_adversarial",
+    "dataset=pope_popular",
+    "dataset=pope_random",
+    "dataset=visual_counterfact_color",
+    "dataset=visual_counterfact_size",
+    "keyword=color",
+    "keyword=size",
+    "keyword=count",
+    "keyword=existence",
+    "keyword=spatial",
+    "keyword=text",
+    "keyword=emotion"
+  ],
+  "forbidden_inputs": [
+    "gold answer",
+    "dense answer or correctness",
+    "dense reliance",
+    "intervention outputs",
+    "reference-safe labels",
+    "minimum observed safe budget",
+    "unexecuted-budget outcomes"
+  ],
+  "groups": {
+    "question_structure": [
+      "question_word_count",
+      "question_character_count",
+      "option_count",
+      "multiple_choice"
+    ],
+    "semantic_keywords": [
+      "keyword=color",
+      "keyword=size",
+      "keyword=count",
+      "keyword=existence",
+      "keyword=spatial",
+      "keyword=text",
+      "keyword=emotion"
+    ],
+    "task_source": [
+      "dataset=mmstar",
+      "dataset=pope_adversarial",
+      "dataset=pope_popular",
+      "dataset=pope_random",
+      "dataset=visual_counterfact_color",
+      "dataset=visual_counterfact_size"
+    ]
+  },
+  "image_derived_features_present": false,
+  "image_feature_note": "No resolution, aspect ratio, image statistic, or image embedding is present."
+}

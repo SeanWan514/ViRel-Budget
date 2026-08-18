@@ -26,5 +26,6 @@ The public repository omits large historical Phase A/Phase B grids. It contains 
 - Replication: inspect or audit `results/replication/`.
 - Carbon: inspect `results/carbon/experiment_run_ledger.csv` and its JSON summary.
 - Pareto: inspect `results/pareto/`.
+- Feature dependence: run `python scripts/analysis/run_feature_ablation.py` or inspect `results/feature_analysis/`.
 
 Do not silently substitute hardware, model revisions, grid intensity, PUE, seeds, or intervention definitions. Record deviations as a new protocol.

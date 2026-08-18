@@ -1,0 +1,18 @@
+{
+  "completed_cells": 42,
+  "configuration_count": 7,
+  "controller_count": 6,
+  "development_query_count": 1200,
+  "development_features_sha256": "a53875d703a4b4d5be2b745fdb63ef645cad7e068b3f1d4d8bae1d03d204e216",
+  "fold_sizes": {
+    "0": 394,
+    "1": 202,
+    "2": 202,
+    "3": 201,
+    "4": 201
+  },
+  "group_count": 575,
+  "original_development_samples_sha256": "4c9d8e92b594c9ac8e2bc549f5759188a22a58581d910e9793f37f267bb66de0",
+  "prospective_labels_used": false,
+  "protocol_sha256": "6f639fde8f57bd41da3ad509790eb52e68dbea44c47e4254d2d9ea226cbd222c"
+}
