@@ -13,7 +13,7 @@
   <img alt="Energy" src="https://img.shields.io/badge/SCOPE_energy_saving-10.6%E2%80%9311.9%25-16a34a">
   <img alt="Status" src="https://img.shields.io/badge/ACM_MM_GreenMM_2026-Accepted_Oral-0B7A75">
   <img alt="Tests" src="https://img.shields.io/badge/tests-29_passed-brightgreen">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-64748b">
+  <img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-64748b">
 </p>
 
 **ViRel-Budget** asks a concrete systems question: **how aggressively can a vision-language model prune visual tokens while preserving its dense answer and intervention-defined response behavior?** It turns development-only supervision into a frozen controller, executes one selected action per query, and evaluates the complete path using accuracy, unsafe acceptance, GPU energy, latency, memory, carbon estimates, and reliability-adjusted efficiency.
@@ -116,7 +116,7 @@ See [`docs/limitations.md`](docs/limitations.md) before reusing the claims.
 
 ## 📜 Citation and license
 
-Citation metadata is in [`CITATION.cff`](CITATION.cff). Code is released under the [MIT License](LICENSE). Source images and external model/pruning implementations retain their original licenses and are not redistributed here. Dataset manifests are provided for research reproducibility and remain subject to their source datasets' terms.
+Citation metadata is in [`CITATION.cff`](CITATION.cff). Code is released under the [Apache License 2.0](LICENSE). Source images and external model/pruning implementations retain their original licenses and are not redistributed here. Dataset manifests are provided for research reproducibility and remain subject to their source datasets' terms.
 
 ## 🙏 Acknowledgments
 
