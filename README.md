@@ -120,4 +120,4 @@ Citation metadata is in [`CITATION.cff`](CITATION.cff). Code is released under t
 
 ## 🙏 Acknowledgments
 
-Weilin Wan and Shilin Ou gratefully acknowledge support from the Summer Research Scholars Program at Duke Kunshan University, under the supervision of Prof. Luyao Zhang, and from the Duke Kunshan University Library grant supporting the Open Data Contest project.
+Sean Wan and Shilin Ou gratefully acknowledge support from the Summer Research Scholars Program at Duke Kunshan University, under the supervision of Prof. Luyao Zhang, and from the Duke Kunshan University Library grant supporting the Open Data Contest project.
