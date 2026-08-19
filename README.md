@@ -19,6 +19,7 @@
 **ViRel-Budget** asks a concrete systems question: **how aggressively can a vision-language model prune visual tokens while preserving its dense answer and intervention-defined response behavior?** It turns development-only supervision into a frozen controller, executes one selected action per query, and evaluates the complete path using accuracy, unsafe acceptance, GPU energy, latency, memory, carbon estimates, and reliability-adjusted efficiency.
 
 GitHub repository: https://github.com/SeanWan514/ViRel-Budget
+HuggingFace repository: https://huggingface.co/datasets/SeanWan05/ViRel-Budget
 
 > [!IMPORTANT]
 > ViRel-Budget measures **intervention-defined visual reliance**; it does not claim to certify universal semantic grounding. Intervention outputs supervise and evaluate the controller but are never available to it at deployment.
