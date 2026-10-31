@@ -16,7 +16,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-64748b">
 </p>
 
-> **Accepted at [GreenMM: Efficient Systems and AI for the Planet](https://sites.google.com/view/greenmm-workshop), a workshop at ACM Multimedia 2026; Oral Presentation.**
+> **Accepted at [GreenMM: Efficient Systems and AI for the Planet](https://sites.google.com/view/greenmm-workshop), workshop at ACM Multimedia 2026; Oral Presentation.**
 >
 > Submission **#2**
 
