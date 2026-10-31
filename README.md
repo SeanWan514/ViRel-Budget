@@ -16,6 +16,10 @@
   <img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-64748b">
 </p>
 
+> **Accepted at [GreenMM: Efficient Systems and AI for the Planet](https://sites.google.com/view/greenmm-workshop), a workshop at ACM Multimedia 2026; Oral Presentation.**
+>
+> Submission **#2**
+
 **ViRel-Budget** asks a concrete systems question: **how aggressively can a vision-language model prune visual tokens while preserving its dense answer and intervention-defined response behavior?** It turns development-only supervision into a frozen controller, executes one selected action per query, and evaluates the complete path using accuracy, unsafe acceptance, GPU energy, latency, memory, carbon estimates, and reliability-adjusted efficiency.
 
 GitHub repository: https://github.com/SeanWan514/ViRel-Budget
